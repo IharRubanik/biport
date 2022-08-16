@@ -1,0 +1,119 @@
+.services {
+  &__inner {
+    display: flex;
+  }
+
+  &__info {
+    width: 42%;
+    padding: 10.208vw 3.083vw 12.208vw max(0.781vw, calc((100% - 61.458vw) / 2));
+
+    background-color: var(--main-black);
+    color: var(--light);
+  }
+
+  .title {
+    font-family: var(--font-family-Helvetica);
+    color: var(--light);
+    margin-bottom: 1.563vw;
+  }
+
+  .subtitle {
+    margin-bottom: 1.042vw;
+  }
+
+  &__descr {
+    font-size: 1.146vw;
+    line-height: 1.4;
+    color: var(--gray);
+    margin-bottom: 7.292vw;
+  }
+
+  &__right {
+    background-color: var(--light);
+    width: 58%;
+    padding: 10.208vw 0 4.208vw 3.042vw;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 2.604vw;
+  }
+
+  //btns-swiper
+  .swiper__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    width: 3.567vw;
+    height: 3.567vw;
+    border: 0.052vw solid var(--main-black);
+    border-radius: 50%;
+    color: var(--main-black);
+    transform: translateX(4.3vw);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--main-green-dark);
+      color: var(--light);
+      border: none;
+    }
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.563vw;
+  }
+
+  .swiper-button-prev {
+    margin-right: 1.563vw;
+  }
+}
+
+//services-slide
+.services-slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 20.025vw;
+  &__img {
+    height: 10.5vw;
+    margin-bottom: 1.563vw;
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 0.65vw;
+    }
+  }
+  &__title {
+    font-family: var(--font-family-Helvetica);
+    color: var(--main-black);
+    margin-bottom: 0.521vw;
+    font-size: 1.25vw;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  &__body {
+    margin-bottom: 1.742vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 0.833vw;
+    line-height: 1.028vw;
+    color: var(--gray);
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 0.833vw;
+    line-height: 1.1;
+    color: var(--main-green-dark);
+  }
+}

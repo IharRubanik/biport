@@ -1,0 +1,127 @@
+.about {
+  margin-bottom: 5.220vw;
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    max-width: 50%;
+  }
+
+  &__column-right {
+    padding-left: 1.042vw;
+  }
+
+  &__text {
+    font-size: 1.086vw;
+    line-height: 1.771vw;
+    color: var(--gray);
+    margin-top: 1.242vw;
+    margin-bottom: 2.083vw;
+  }
+
+  //about-swiper
+  &__slide {
+    margin-bottom: 2.604vw;
+    img {
+      width: 100%;
+    }
+  }
+
+  .swiper-pagination {
+    text-align: initial;
+    position: static;
+  }
+
+  .swiper-pagination-fraction {
+    color: rgba(97, 93, 93, 0.493);
+    font-size: 1.573vw;
+  }
+
+  .swiper-pagination-current,
+  .current {
+    color: var(--main-black);
+    font-size: 5.646vw;
+  }
+
+  .swiper-pagination-total,
+  .total {
+    font-size: 3.083vw;
+    font-weight: 300;
+  }
+
+  .swiper__nav {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .swiper__btns {
+    display: flex;
+    padding-bottom: 1.681vw;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    width: 4.167vw;
+    height: 4.167vw;
+    border: 0.052vw solid var(--main-black);
+    border-radius: 50%;
+    color: var(--main-black);
+    transform: translateY(0.365vw);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--main-green-dark);
+      color: var(--light);
+      border: none;
+    }
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.563vw;
+  }
+
+  .swiper-button-prev {
+    margin-right: 1.563vw;
+  }
+}
+
+//benefits
+.benefits {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.142vw;
+  }
+
+  &__item {
+    max-width: 100%;
+    width: 11.417vw;
+    padding-bottom: 0.565vw;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.052vw;
+      border-radius: 0.104vw;
+      background-color: var(--gray);
+      opacity: 0.3;
+    }
+  }
+
+  &__num {
+    font-size: 6.102vw;
+    font-weight: 100;
+  }
+
+  &__title {
+    font-size: 0.938vw;
+    font-weight: 400;
+  }
+}

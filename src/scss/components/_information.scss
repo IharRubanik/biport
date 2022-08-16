@@ -1,0 +1,99 @@
+.info {
+  margin-bottom: 6.25vw;
+
+  //titles
+  .titles {
+    margin-bottom: 3.125vw;
+  }
+
+  //content
+  &__wrapper {
+    margin-bottom: 3.646vw;
+  }
+
+  &__slide {
+    overflow: hidden;
+    height: auto;
+    border-radius: 1.042vw;
+    color: var(--light);
+    img {
+      height: 10.2vw;
+      width: 100%;
+    }
+    &:nth-child(even) {
+      background-color: var(--main-black);
+    }
+    &:nth-child(odd) {
+      background-color: var(--main-green-dark);
+    }
+  }
+
+  &__text {
+    padding: 1.771vw 1.302vw 3.802vw;
+  }
+
+  &__num {
+    position: absolute;
+    top: 0.26vw;
+    left: 1.094vw;
+    font-family: var(----font-family-Helvetica);
+    font-weight: 700;
+    font-size: 3.646vw;
+    line-height: 4.167vw;
+  }
+
+  &__title {
+    font-family: var(--font-family-HelveticaNeue);
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.198vw;
+    margin-bottom: 0.573vw;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 0.833vw;
+    line-height: 1.028vw;
+  }
+
+  //info-swiper
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    min-height: 25.042vw;
+  }
+
+  .swiper__btns {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    width: 4.167vw;
+    height: 4.167vw;
+    border: 0.052vw solid var(--main-black);
+    border-radius: 50%;
+    color: var(--main-black);
+    transform: translateY(0.365vw);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--main-green-dark);
+      color: var(--light);
+      border: none;
+    }
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.563vw;
+  }
+
+  .swiper-button-prev {
+    margin-right: 1.563vw;
+  }
+}

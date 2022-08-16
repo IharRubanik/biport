@@ -1,0 +1,53 @@
+.discount {
+  .titles {
+    margin-bottom: 1.563vw;
+  }
+
+  background: url("../img/discount.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 4.966vw 0vw;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-0.365vw);
+  }
+
+  &__img {
+    margin-right: 0.802vw;
+    flex: 1 0 50%;
+  }
+
+  &__content {
+    color: var(--light);
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 1.146vw;
+    line-height: 1.623vw;
+    color: var(--main-green-dark);
+    margin-bottom: 0.781vw;
+  }
+
+  &__title {
+    font-family: var(--font-family-Helvetica);
+    font-weight: 700;
+    font-size: 3.594vw;
+    line-height: 4.115vw;
+    margin-bottom: 0.794vw;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 1.046vw;
+    line-height: 1.671vw;
+    margin-bottom: 2.708vw;
+  }
+
+  &__btn {
+    padding: 1.042vw 3.904vw;
+  }
+}

@@ -1,0 +1,120 @@
+.feedback {
+  background: url("../img/feedback-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 8.594vw 0vw;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0.221vw);
+  }
+
+  &__container {
+    position: relative;
+    max-width: 52.083vw;
+    margin: 0 auto;
+    border-radius: 1.042vw;
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+  }
+
+  &__form {
+    background-color: var(--light);
+    padding: 2.604vw;
+    width: 50%;
+  }
+
+  .titles {
+    margin-bottom: 1.042vw;
+  }
+
+  .title {
+    font-size: 2.548vw;
+  }
+
+  &__image {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.form {
+  &__text {
+    color: var(--gray);
+    margin-bottom: 2.604vw;
+    font-size: 1.146vw;
+    line-height: 1.4;
+  }
+
+  &__label {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 1.342vw;
+      height: 1.342vw;
+      z-index: 1;
+    }
+  }
+
+  &__label--name {
+    &::before {
+      background: url("../img/user.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+      top: -0.156vw;
+    }
+  }
+
+  &__label--phone {
+    &::before {
+      background: url("../img/phone.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+    }
+  }
+
+  &__input {
+    margin-bottom: 1.281vw;
+    position: relative;
+    width: 100%;
+    color: var(--main-black);
+    padding: 0 0 0.781vw 2.042vw;
+    font-size: 0.833vw;
+    outline: none;
+    line-height: 1.5;
+    border-bottom: 0.052vw solid var(--gray);
+    &::placeholder {
+      color: var(--gray);
+    }
+  }
+
+  &__notice {
+    display: inline-block;
+    margin-top: 2.604vw;
+    margin-bottom: 1.042vw;
+    font-size: 0.729vw;
+    color: var(--gray);
+    line-height: 1.4;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

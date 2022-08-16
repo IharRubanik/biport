@@ -1,0 +1,52 @@
+//action
+.action {
+  position: absolute;
+  top: 3.93vw;
+  left: 0;
+  width: 100%;
+  background-color: var(--orange);
+  border: 0.052vw solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.521vw 0vw;
+  transition: all 0.2s ease-in-out;
+  z-index: 4;
+  &__title {
+    font-size: 0.59vw;
+    font-weight: 400;
+    line-height: 0.729vw;
+    color: var(--main-black);
+    position: relative;
+    padding: 0vw 1.042vw;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0.104vw;
+      left: 0;
+      width: 0.521vw;
+      height: 0.521vw;
+      border: 0.104vw solid var(--main-black);
+      border-right: none;
+      border-top: none;
+      transform: rotate(45deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.104vw;
+      right: 0;
+      width: 0.521vw;
+      height: 0.521vw;
+      border: 0.104vw solid var(--main-black);
+      border-left: none;
+      border-bottom: none;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:hover {
+    background-color: var(--light);
+    border-top: 0.052vw solid #1c1d1b;
+  }
+}

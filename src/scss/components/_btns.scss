@@ -1,0 +1,26 @@
+.btn {
+  font-size: 0.833vw;
+  font-weight: 500;
+  line-height: 0.885vw;
+  padding: 1.042vw 3.604vw;
+  border-radius: 3.125vw;
+  transition: all 0.3s ease-in;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  &:hover {
+    background-color: #feecb4;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 0.052vw solid var(--light);
+  color: var(--light);
+  &:hover {
+    background-color: var(--light);
+    color: var(--main-black);
+  }
+}

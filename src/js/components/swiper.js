@@ -1,0 +1,108 @@
+import Swiper, { EffectFade, Keyboard, Navigation, Pagination } from "swiper";
+
+//hero-swiper
+Swiper.use([Navigation, Pagination, EffectFade]);
+const swiper = new Swiper(".hero__swiper", {
+  slidesPerView: "auto",
+  speed: 500,
+  loop: true,
+  effect: "fade",
+  autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+
+    renderFraction: function (currentClass, totalClass) {
+      return `
+         <span class="current">0<span class="${currentClass}"></span></span> / <span class="total">0<span class="${totalClass}"></span></span>
+      `;
+    },
+  },
+});
+
+//about-swiper
+Swiper.use([Navigation, Pagination, Keyboard]);
+const aboutSwiper = new Swiper(".about__swiper", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 10,
+  loop: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  speed: 1000,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+
+    renderFraction: function (currentClass, totalClass) {
+      return `
+         <span class="current">0<span class="${currentClass}"></span></span> / <span class="total">0<span class="${totalClass}"></span></span>
+      `;
+    },
+  },
+});
+
+//info-swiper
+Swiper.use([Navigation, Pagination, Keyboard]);
+const infoSwiper = new Swiper(".info__swiper", {
+  slidesPerView: 2.85,
+  slidesPerGroup: 2,
+  spaceBetween: 20,
+  loop: false,
+  centeredSlides: false,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  speed: 1000,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+
+    renderFraction: function (currentClass, totalClass) {
+      return `
+         <span class="current">0<span class="${currentClass}"></span></span> / <span class="total">0<span class="${totalClass}"></span></span>
+      `;
+    },
+  },
+});
+
+//services-swiper
+Swiper.use([Navigation, Pagination, Keyboard]);
+const servicesSwiper = new Swiper(".services__swiper", {
+  slidesPerView: "auto",
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  loop: true,
+  centeredSlides: false,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  speed: 1000,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

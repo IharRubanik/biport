@@ -1,0 +1,25 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family-Helvetica: "Helvetica";
+  --font-family-HelveticaNeue: "HelveticaNeue";
+  --font-family-Roboto: "Roboto";
+
+  --content-width: 65.458vw;
+  --container-offset: 0.781vw;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --content-width-max: 80.458vw;
+  --container-offset-max: 0.781vw;
+  --container-width-max: calc(var(--content-width-max) + (var(--container-offset-max) * 2));
+
+  // colors
+  --main-black: #1c1d1b;
+  --light: #ffffff;
+  --main-green: #d5bb5e;
+  --gray: #8c8c8c;
+  --bg-gray: #f7f7f7;
+  --orange: #f7cf50;
+  --main-green-dark: #728161;
+}

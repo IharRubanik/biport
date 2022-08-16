@@ -1,0 +1,18 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+
+//Helvetica
+@include font-face("Helvetica", "../fonts/HelveticaLight", 300, normal);
+@include font-face("Helvetica", "../fonts/HelveticaRegular", 400, normal);
+@include font-face("Helvetica", "../fonts/HelveticaBold", 700, normal);
+@include font-face(
+  "HelveticaNeue",
+  "../fonts/HelveticaNeueCyrBold",
+  700,
+  normal
+);
+
+//Roboto
+@include font-face("Roboto", "../fonts/Robotothin", 100, normal);
+@include font-face("Roboto", "../fonts/RobotoLight", 300, normal);
+@include font-face("Roboto", "../fonts/RobotoRegular", 400, normal);
+@include font-face("Roboto", "../fonts/RobotoMedium", 500, normal);
