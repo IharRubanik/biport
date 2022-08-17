@@ -1,7 +1,6 @@
 .hero {
   margin-bottom: 9.013vw;
   padding-top: 3.646vw;
-
   &__slide {
     &--first {
       background: url("../img/banner1.jpg");
@@ -27,16 +26,16 @@
   }
 
   &__title {
-    font-size: 3.125vw;
     font-weight: 500;
-    line-height: 3.646vw;
-    margin-bottom: 2.042vw;
+    font-size: 3.594vw;
+    line-height: 4.115vw;
+    margin-bottom: 1.573vw;
   }
 
   &__text {
     font-size: 1.166vw;
     font-weight: 300;
-    line-height: 1.45vw;
+    line-height: 1.815vw;
     margin-bottom: 4.867vw;
   }
 
@@ -63,7 +62,7 @@
       content: "";
       position: absolute;
       right: -10vw;
-      width: 20.717vw;
+      width: 20.45vw;
       height: 100vw;
       background: rgba(0, 0, 0, 0.4);
       z-index: -1;
@@ -73,13 +72,15 @@
     }
   }
 
-  &__btn-next:hover {
-    &::after {
-      transform: translateX(-1vw);
-      color: var(--light);
-    }
-    &::before {
-      opacity: 1;
+  @include for-desktop {
+    &__btn-next:hover {
+      &::after {
+        transform: translateX(-1vw);
+        color: var(--light);
+      }
+      &::before {
+        opacity: 1;
+      }
     }
   }
 
@@ -96,7 +97,7 @@
       content: "";
       position: absolute;
       left: -10vw;
-      width: 20.717vw;
+      width: 20.45vw;
       height: 100vw;
       background: rgba(0, 0, 0, 0.4);
       z-index: -1;
@@ -105,13 +106,15 @@
     }
   }
 
-  &__btn-prev:hover {
-    &::after {
-      transform: translateX(1vw);
-      color: var(--light);
-    }
-    &::before {
-      opacity: 1;
+  @include for-desktop {
+    &__btn-prev:hover {
+      &::after {
+        transform: translateX(1vw);
+        color: var(--light);
+      }
+      &::before {
+        opacity: 1;
+      }
     }
   }
 
@@ -139,5 +142,171 @@
     font-size: 3.01vw;
     color: rgba(97, 93, 93, 0.493);
     font-weight: 200;
+  }
+}
+
+//mob-menu
+
+//hero
+@include tablet {
+  .hero {
+    margin-bottom: 13.021vw;
+
+    &__content {
+      padding: 3.906vw 2.604vw 13.021vw;
+      max-width: 56.313vw;
+      margin-left: 8.021vw;
+    }
+
+    &__title {
+      font-size: 6.511vw;
+      line-height: 7.552vw;
+      margin-bottom: 3.906vw;
+    }
+
+    &__text {
+      font-size: 2.083vw;
+      line-height: 3.125vw;
+      margin-bottom: 13.672vw;
+    }
+
+    &__btns {
+      flex-direction: column;
+      .btn {
+        font-size: 2.083vw;
+        line-height: 2.344vw;
+        padding: 2.604vw 13.021vw;
+      }
+      .btn-primary {
+        margin-right: 0;
+        margin-bottom: 3.906vw;
+      }
+    }
+
+    //hover-btns
+    &__btn-next {
+      top: 50%;
+      right: 7vw;
+      &::after {
+        font-size: 8.883vw;
+      }
+      &::before {
+        //right: -11.925vw;
+        //width: 23vw;
+        //height: 156.25vw;
+        display: none;
+      }
+    }
+
+    @include for-desktop {
+      &__btn-next:hover {
+        &::after {
+          transform: translateX(0);
+          color: var(--light);
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__btn-prev {
+      transform: translateX(-24px);
+      top: 50%;
+      left: 7vw;
+      &::after {
+        font-size: 8.883vw;
+      }
+      &::before {
+        //left: -11.925vw;
+        //width: 23vw;
+        //height: 156.25vw;
+        display: none;
+      }
+    }
+
+    //swiper-pagination
+    .swiper-pagination {
+      margin-top: 49.989px;
+      margin-bottom: 64.573px;
+    }
+
+    .swiper-pagination-fraction {
+      font-size: 3.771vw;
+    }
+
+    .swiper-pagination-current,
+    .current {
+      font-size: 18.229vw;
+      line-height: 1.3;
+    }
+
+    .swiper-pagination-total,
+    .total {
+      font-size: 5.859vw;
+    }
+  }
+}
+
+@include tablet {
+  .info {
+    margin-bottom: 13.021vw;
+
+    //titles
+    .titles {
+      margin-bottom: 7.813vw;
+    }
+
+    //content
+    &__wrapper {
+      margin-bottom: 3.906vw;
+    }
+
+    &__slide {
+      img {
+        height: 31.25vw;
+        width: 100%;
+      }
+    }
+
+    &__text {
+      padding: 4.427vw 4.557vw 9.375vw;
+    }
+
+    &__num {
+      font-size: 9.115vw;
+      line-height: 10.417vw;
+    }
+
+    &__title {
+      font-size: 3.125vw;
+      line-height: 2.995vw;
+      margin-bottom: 1.432vw;
+    }
+
+    &__descr {
+      font-size: 2.083vw;
+      line-height: 3.255vw;
+    }
+
+    //info-swiper
+    .swiper-slide {
+      min-height: 69.704vw;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 8.334vw;
+      height: 8.334vw;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 3.563vw;
+    }
+
+    .swiper-button-prev {
+      margin-right: 1.563vw;
+    }
   }
 }

@@ -85,7 +85,7 @@
     img {
       height: 100%;
       width: 100%;
-      border-radius: 0.65vw;
+      border-radius: 0.789vw;
     }
   }
   &__title {
@@ -115,5 +115,92 @@
     font-size: 0.833vw;
     line-height: 1.1;
     color: var(--main-green-dark);
+  }
+}
+
+@include tablet {
+  .services {
+    &__info {
+      width: 100%;
+      padding: 33.724vw 3.906vw;
+    }
+
+    .title {
+      margin-bottom: 3.906vw;
+    }
+
+    .subtitle {
+      margin-bottom: 1.302vw;
+    }
+
+    &__descr {
+      font-size: 2.083vw;
+      line-height: 3.125vw;
+      margin-bottom: 13.021vw;
+    }
+
+    &__right {
+      padding: 23.438vw 0vw 13.021vw 3.906vw;
+    }
+
+    &__wrapper {
+      margin-bottom: 2.604vw;
+    }
+
+    //btns-swiper
+    .swiper__btns {
+      justify-content: flex-end;
+      transform: translateX(-4vw);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 8.334vw;
+      height: 8.334vw;
+      transform: translateX(0);
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 3.563vw;
+    }
+
+    .swiper-button-prev {
+      margin-right: 1.563vw;
+    }
+  }
+
+  //services-slide
+  .services-slide {
+    width: 20.025vw;
+    margin-bottom: 3.906vw;
+    &__img {
+      height: 31.25vw;
+      margin-bottom: 3.906vw;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__body {
+      margin-bottom: 1.953vw;
+    }
+
+    &__title {
+      margin-bottom: 1.953vw;
+      font-size: 3.125vw;
+      line-height: 3.516vw;
+    }
+
+    &__descr {
+      font-size: 2.083vw;
+      line-height: 3.255vw;
+    }
+
+    &__link {
+      font-size: 2.083vw;
+      line-height: 2.344vw;
+    }
   }
 }

@@ -1,13 +1,24 @@
+.choices {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 1.533vw;
+}
+
 .choices__inner {
+  min-height: auto;
   border: none;
   background-color: transparent;
-  min-height: auto;
-  padding-right: 0.763vw;
+  padding: 0;
   font-size: 0.829vw;
+  line-height: 0.938vw;
+  width: 100%;
+  width: 4.421vw;
 }
 
 .choices__item--selectable {
   color: var(--light);
+  padding: 0.5vw 0.9vw;
 }
 
 .choices__item {
@@ -17,7 +28,7 @@
 
 .is-open .choices__inner {
   background-color: var(--light);
-  border-radius: 0.833vw;
+  border-radius: 1.833vw;
 }
 
 .is-open .choices__item {
@@ -28,7 +39,6 @@
   background-color: var(--light);
   border-radius: 0.521vw;
   border: none;
-  margin-top: 0.521vw;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted::after {
@@ -39,14 +49,28 @@
   display: none;
 }
 
+.choices__list--single {
+  padding: 0;
+  width: 100%;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 0;
+}
+
 .choices[data-type*="select-one"]::after {
   border-color: var(--main-green) transparent transparent;
-  height: 0vw;
-  width: 0vw;
-  border-width: 0.26vw;
-  right: 0.599vw;
+  height: 0px;
+  width: 0px;
+  border-width: 3.997px;
+  right: 20.368px;
   top: 50%;
-  margin-top: -0.13vw;
+  margin-top: -1.536px;
+}
+
+.choices__list--dropdown .choices__list,
+.choices__list[aria-expanded] .choices__list {
+  overflow: hidden;
 }
 
 .choices[data-type*="select-one"].is-open:after {
@@ -55,14 +79,56 @@
   transform: rotate(180deg);
 }
 
-.choices__list--dropdown .choices__list,
-.choices__list[aria-expanded] .choices__list {
-  overflow: hidden;
-}
-
 @media (min-width: 33.333vw) {
   .choices__list--dropdown .choices__item--selectable,
   .choices__list[aria-expanded] .choices__item--selectable {
     padding-right: 0;
+  }
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  border: none;
+  margin-top: -1px;
+  border-radius: 0.608vw;
+  right: 0;
+  margin-top: 0.521vw;
+}
+
+@include tablet {
+  .choices {
+    background-color: var(--main-green-dark);
+    width: 7.937vw;
+    height: 3.516vw;
+  }
+
+  .choices__inner {
+    font-size: 2.114vw;
+  }
+
+  .choices__item--selectable {
+    color: var(--light);
+    padding: 0.333vw 0.733vw;
+  }
+
+  .is-open .choices__inner {
+    background-color: var(--main-green-dark);
+    border-radius: 1.833vw;
+  }
+
+  .is-open .choices__item {
+    color: var(--light);
+  }
+
+  .choices__list--single {
+    padding: 0;
+    width: 100%;
+  }
+
+  .choices__list--dropdown .choices__item,
+  .choices__list[aria-expanded] .choices__item {
+    padding: 0.651vw 1.693vw;
+    font-size: 2.114vw;
+    color: var(--main-green);
   }
 }

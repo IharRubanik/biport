@@ -15,3 +15,23 @@
     color: var(--main-black);
   }
 }
+
+@include tablet {
+  .titles {
+    font-family: var(--font-family-Helvetica);
+
+    .subtitle {
+      font-weight: 400;
+      font-size: 2.344vw;
+      line-height: 2.734vw;
+      color: var(--gray);
+      margin-bottom: 1.302vw;
+    }
+    .title {
+      font-size: 4.948vw;
+      font-weight: 700;
+      line-height: 5.69vw;
+      color: var(--main-black);
+    }
+  }
+}

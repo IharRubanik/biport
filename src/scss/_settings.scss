@@ -33,6 +33,7 @@ p {
 }
 
 .page__body {
+  position: inherit !important;
   background-color: var(--bg-gray);
 }
 
@@ -94,15 +95,17 @@ a {
 }
 
 .container {
+  max-width: 67.368vw;
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 0.789vw;
 }
 
-.container-max {
-  margin: 0 auto;
-  padding: 0 var(--container-offset-max);
-  max-width: var(--container-width-max);
+@include tablet {
+  .container {
+    max-width: 166.667vw;
+    margin: 0 auto;
+    padding: 0 1.953vw;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

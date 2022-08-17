@@ -1,55 +1,79 @@
-<header class="header fix-block">
-  <div class="container-max">
-    <div class="header__inner">
-      <div class="header__left">
-        <nav class="nav">
-          <ul class="nav__list list-reset">
-            <li class="nav__item"><a href="#" class="nav__link">Магазин</a></li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">О компании</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <a href="#" class="header__logo">
-        <picture>
-          <source srcset="img/logo.avif" type="image/avif" />
-          <source srcset="img/logo.webp" type="image/webp" />
-          <img
-            loading="lazy"
-            src="img/logo.jpg"
-            class="image"
-            width="100"
-            height="30"
-            alt="Logo"
-          />
-        </picture>
-      </a>
-      <div class="header__right">
-        <div class="header__call call">
-          <a href="tel:995265167106" class="call__phone">+ 995 265 167 106</a>
-          <a href="#" class="call__text" data-graph-path="modal-feedback"
-            >Обратный звонок</a
-          >
-        </div>
-        <div class="header__cart cart">
-          <a href="#" class="cart__link">
-            <svg>
-              <use xlink:href="img/sprite.svg#cart"></use>
-            </svg>
-            <span class="cart__count">0</span>
+<header class="header">
+  <div class="header__inner">
+    <button
+      class="burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+    </button>
+
+    <div class="header__left">
+      <nav class="nav">
+        <div class="nav__top">
+          <a href="#" class="nav__logo">
+            <picture>
+              <source srcset="img/logo-mob.avif" type="image/avif" />
+              <source srcset="img/logo-mob.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="img/logo-mob.png"
+                class="image"
+                width="100"
+                height="30"
+                alt="Logo"
+              />
+            </picture>
           </a>
         </div>
-        <div class="header__lang lang">
-          <select name="lang" class="lang-choice">
-            <option selected value="ru">RU</option>
-            <option value="en">EN</option>
-            <option value="ge">GE</option>
-          </select>
-        </div>
+
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Магазин</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link" data-menu-item>О компании</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#" class="header__logo">
+      <picture>
+        <source srcset="img/logo.avif" type="image/avif" />
+        <source srcset="img/logo.webp" type="image/webp" />
+        <img
+          loading="lazy"
+          src="img/logo.jpg"
+          class="image"
+          width="100"
+          height="30"
+          alt="Logo"
+        />
+      </picture>
+    </a>
+    <div class="header__right">
+      <div class="header__call call">
+        <a href="tel:995265167106" class="call__phone">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>+ 995 265 167 106</span>
+        </a>
+        <a href="#" class="call__text" data-graph-path="modal-feedback"
+          >Обратный звонок</a
+        >
+      </div>
+
+      <div class="header__lang lang" data-da=".mob-menu__item-lang,1200,last">
+        <select name="lang" class="lang-choice">
+          <option selected value="ru">RU</option>
+          <option value="en">EN</option>
+          <option value="ge">GE</option>
+        </select>
       </div>
     </div>
   </div>

@@ -85,6 +85,18 @@ const infoSwiper = new Swiper(".info__swiper", {
       `;
     },
   },
+
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1.7,
+    },
+    1200: {
+      slidesPerView: 2.85,
+    },
+  },
 });
 
 //services-swiper
@@ -104,5 +116,17 @@ const servicesSwiper = new Swiper(".services__swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1.16,
+    },
+    1200: {
+      slidesPerView: 2.65,
+    },
   },
 });

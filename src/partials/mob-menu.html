@@ -1,0 +1,86 @@
+<div class="mob-menu" data-menu>
+  <nav class="mob-menu__nav">
+    <div class="mob-menu__top">
+      <button
+        class="burger mob-menu__burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+
+      <a href="#" class="mob-menu__logo">
+        <picture>
+          <source srcset="img/logo-mob.avif" type="image/avif" />
+          <source srcset="img/logo-mob.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            src="img/logo-mob.png"
+            class="image"
+            width="100"
+            height="30"
+            alt="Logo"
+          />
+        </picture>
+      </a>
+
+      <button class="btn btn-reset mob-menu__item-btn-close" data-menu-close>
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mob-menu__list list-reset">
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link" data-menu-item>Магазин</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link" data-menu-item>Контакты</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#services" class="mob-menu__link" data-menu-item>О компании</a>
+      </li>
+      <li class="mob-menu__item mob-menu__item-lang">
+        <a href="#" class="mob-menu__link" data-menu-item>Язык</a>
+      </li>
+    </ul>
+    <div class="feedback__form mob-menu-nav__item-form">
+      <div class="titles">
+        <h2 class="title">Обратный звонок</h2>
+      </div>
+      <p class="form__text">
+        Оставьте заявку и наш менеджер перезвонит вам <br />
+        в течение 15 минут
+      </p>
+      <form action="#" class="form">
+        <label class="form__label form__label--name">
+          <input
+            type="text"
+            name="Имя"
+            class="input-reset form__input"
+            placeholder="Ваше Имя"
+          />
+        </label>
+        <label class="form__label form__label--phone">
+          <input
+            type="tel"
+            name="Телефон"
+            class="input-reset form__input"
+            placeholder="Ваш телефон"
+          />
+        </label>
+
+        <span class="form__notice"
+          >Нажимая кнопку “Оставить заявку” Вы даете согласие на обработку ваших
+          персональных данных</span
+        >
+
+        <button class="btn-reset form__btn btn btn-primary">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </nav>
+</div>

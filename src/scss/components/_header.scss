@@ -2,20 +2,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 3;
+  padding: 0vw 5.208vw;
   background-color: var(--main-green-dark);
-  //padding: 0.721vw 6.908vw;
-  padding: 0.721vw 0;
   width: 100%;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.721vw 0;
   }
 
   &__logo {
-    width: 7.208vw;
-    height: 2.604vw;
+    width: 6.146vw;
+    height: 2.188vw;
     margin: 0 auto;
     img {
       width: 100%;
@@ -56,51 +56,114 @@
 
   &__link {
     color: inherit;
-    font-size: 0.777vw;
+    font-size: 0.833vw;
     font-weight: 500;
+  }
+
+  &__top {
+    display: none;
+  }
+
+  &__item-lang,
+  &__item-form {
+    display: none;
   }
 }
 
 //call
 .call {
   &__phone {
+    display: flex;
+    align-items: center;
     color: var(--light);
-    font-size: 1.142vw;
-    font-weight: 700;
-    display: inline-block;
     margin-bottom: 0.156vw;
+    svg {
+      display: none;
+      width: 1.667vw;
+      height: 1.667vw;
+      fill: var(--light);
+    }
+    span {
+      font-size: 1.25vw;
+      line-height: 1.458vw;
+      font-weight: 700;
+    }
   }
 
   &__text {
     color: #ededed;
     margin: 0;
     font-weight: 400;
-    font-size: 0.625vw;
+    font-size: 0.729vw;
+    line-height: 0.833vw;
   }
 }
 
-//cart
-.cart {
-  &__link {
-    position: relative;
-    svg {
-      width: 1.094vw;
-      height: 1.302vw;
-      fill: var(--light);
+//burger
+.burger {
+  @include burger;
+  display: none;
+  color: var(--light);
+  width: 35px;
+
+  &__line {
+    border-radius: 0.333vw;
+  }
+  &::after {
+    border-radius: 0.333vw;
+  }
+  &::before {
+    border-radius: 0.333vw;
+  }
+}
+
+@include tablet {
+  //burger
+  .burger {
+    display: block;
+  }
+
+  //header
+  .header {
+    padding: 1vw 0;
+
+    &__logo {
+      width: 15.365vw;
+      height: 5.469vw;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__inner {
+      padding: 0vw 2.5vw;
+    }
+
+    &__call {
+      margin-right: 0;
+    }
+
+    &__left {
+      display: none;
     }
   }
-  &__count {
-    position: absolute;
-    bottom: 0;
-    right: -0.26vw;
-    color: var(--light);
-    width: 0.881vw;
-    height: 0.881vw;
-    border-radius: 50%;
-    background-color: var(--main-black);
-    font-size: 0.521vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  //call
+  .call {
+    &__phone {
+      svg {
+        display: block;
+        width: 3.385vw;
+        height: 3.255vw;
+      }
+      span {
+        display: none;
+      }
+    }
+
+    &__text {
+      display: none;
+    }
   }
 }

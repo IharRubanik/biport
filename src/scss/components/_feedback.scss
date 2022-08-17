@@ -58,6 +58,8 @@
   }
 
   &__label {
+    display: flex;
+    align-items: center;
     position: relative;
     &::before {
       content: "";
@@ -99,7 +101,7 @@
     font-size: 0.833vw;
     outline: none;
     line-height: 1.5;
-    border-bottom: 0.052vw solid var(--gray);
+    border-bottom: 1px solid var(--border-color);
     &::placeholder {
       color: var(--gray);
     }
@@ -116,5 +118,64 @@
 
   &__btn {
     width: 100%;
+  }
+}
+
+@include tablet {
+  .feedback {
+    padding: 22.526vw 3.906vw;
+
+    &__container {
+      max-width: 100%;
+    }
+
+    &__form {
+      background-color: var(--light);
+      padding: 6.51vw 3.255vw;
+      width: 55%;
+    }
+
+    .titles {
+      margin-bottom: 3.906vw;
+    }
+
+    .title {
+      font-size: 4.948vw;
+    }
+
+    &__image {
+      width: 45%;
+    }
+
+    //form
+    .form {
+      &__text {
+        margin-bottom: 7.813vw;
+        font-size: 2.083vw;
+        line-height: 3.125vw;
+      }
+
+      &__label {
+        &::before {
+          width: 2.342vw;
+          height: 2.342vw;
+          top: 0.5vw;
+        }
+      }
+
+      &__input {
+        margin-bottom: 1.281vw;
+        padding: 0vw 3.953vw 1.953vw;
+        font-size: 2.083vw;
+        line-height: 3.32vw;
+      }
+
+      &__notice {
+        margin-top: 7.813vw;
+        margin-bottom: 2.604vw;
+        font-size: 1.563vw;
+        line-height: 3.32vw;
+      }
+    }
   }
 }

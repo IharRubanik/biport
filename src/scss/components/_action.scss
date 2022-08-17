@@ -11,9 +11,9 @@
   align-items: center;
   padding: 0.521vw 0vw;
   transition: all 0.2s ease-in-out;
-  z-index: 4;
+  z-index: 2;
   &__title {
-    font-size: 0.59vw;
+    font-size: 0.625vw;
     font-weight: 400;
     line-height: 0.729vw;
     color: var(--main-black);
@@ -45,8 +45,28 @@
     }
   }
 
-  &:hover {
-    background-color: var(--light);
-    border-top: 0.052vw solid #1c1d1b;
+  @include for-desktop {
+    &:hover {
+      background-color: var(--light);
+      border-top: 0.052vw solid #1c1d1b;
+    }
+  }
+}
+
+@include tablet {
+  .action {
+    top: 7.457vw;
+    padding: 1.233vw 0vw;
+  }
+
+  .action__title {
+    font-size: 1.589vw;
+    padding: 0vw 2.906vw;
+    &::after,
+    &::before {
+      top: 0;
+      width: 1.04vw;
+      height: 1.04vw;
+    }
   }
 }

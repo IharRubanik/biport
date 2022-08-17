@@ -89,9 +89,12 @@
       height: 1.081vw;
       fill: var(--light);
     }
-    &:hover {
-      background-color: var(--main-green-dark);
-      border: 0.052vw solid none;
+
+    @include for-desktop {
+      &:hover {
+        background-color: var(--main-green-dark);
+        border: 0.052vw solid none;
+      }
     }
   }
 }
@@ -101,5 +104,78 @@
     color: var(--gray);
     font-size: 0.729vw;
     line-height: 1.4;
+  }
+}
+
+@include tablet {
+  .footer {
+    background-color: var(--main-black);
+
+    &__top {
+      padding: 7.813vw 3.906vw 5.208vw;
+    }
+
+    &__menu {
+      margin-bottom: 6.208vw;
+    }
+
+    &__logo {
+      width: 28.776vw;
+      height: 10.417vw;
+      transform: translateY(1.337vw);
+    }
+
+    &__call {
+      span {
+        font-size: 3.255vw;
+        line-height: 3.906vw;
+        margin-bottom: 1.432vw;
+      }
+    }
+
+    &__copyright {
+      padding: 2.083vw 0vw 2.604vw;
+      letter-spacing: 0.26vw;
+    }
+  }
+
+  .footer-nav {
+    margin-bottom: 6.208vw;
+    &__list {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 6.51vw;
+      }
+    }
+
+    &__link {
+      font-size: 2.344vw;
+      line-height: 2.734vw;
+    }
+  }
+
+  .social {
+    &__link {
+      width: 3.906vw;
+      height: 3.906vw;
+      &:not(:last-child) {
+        margin-right: 2.214vw;
+      }
+      svg {
+        width: 2.214vw;
+        height: 1.953vw;
+      }
+    }
+  }
+  .copyright {
+    &__title {
+      font-size: 1.563vw;
+      line-height: 3.32vw;
+    }
   }
 }
