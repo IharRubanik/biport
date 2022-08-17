@@ -72,29 +72,105 @@
 
   <body class="page__body">
     <div class="site-container">
-      <header class="header fix-block">
-  <div class="container-max">
-    <div class="header__inner">
-      <div class="header__left">
-        <nav class="nav">
-          <ul class="nav__list list-reset">
-            <li class="nav__item"><a href="#" class="nav__link">Магазин</a></li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">О компании</a>
-            </li>
-          </ul>
-        </nav>
+      <header class="header">
+  <div class="header__inner">
+    <button
+      class="burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+    </button>
+
+    <div class="header__left">
+      <nav class="nav">
+        <div class="nav__top">
+          <a href="#" class="nav__logo">
+            <picture>
+              <source srcset="img/logo-mob.avif" type="image/avif" />
+              <source srcset="img/logo-mob.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="img/logo-mob.png"
+                class="image"
+                width="100"
+                height="30"
+                alt="Logo"
+              />
+            </picture>
+          </a>
+        </div>
+
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Магазин</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" data-menu-item>Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link" data-menu-item>О компании</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#" class="header__logo">
+      <picture>
+        <source srcset="img/logo.avif" type="image/avif" />
+        <source srcset="img/logo.webp" type="image/webp" />
+        <img
+          loading="lazy"
+          src="img/logo.jpg"
+          class="image"
+          width="100"
+          height="30"
+          alt="Logo"
+        />
+      </picture>
+    </a>
+    <div class="header__right">
+      <div class="header__call call">
+        <a href="tel:995265167106" class="call__phone">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>+ 995 265 167 106</span>
+        </a>
+        <a href="#" class="call__text" data-graph-path="modal-feedback"
+          >Обратный звонок</a
+        >
       </div>
-      <a href="#" class="header__logo">
+
+      <div class="header__lang lang" data-da=".mob-menu__item-lang,1200,last">
+        <select name="lang" class="lang-choice">
+          <option selected value="ru">RU</option>
+          <option value="en">EN</option>
+          <option value="ge">GE</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+ <div class="mob-menu" data-menu>
+  <nav class="mob-menu__nav">
+    <div class="mob-menu__top">
+      <button
+        class="burger mob-menu__burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+
+      <a href="#" class="mob-menu__logo">
         <picture>
-          <source srcset="img/logo.avif" type="image/avif" />
-          <source srcset="img/logo.webp" type="image/webp" />
+          <source srcset="img/logo-mob.avif" type="image/avif" />
+          <source srcset="img/logo-mob.webp" type="image/webp" />
           <img
             loading="lazy"
-            src="img/logo.jpg"
+            src="img/logo-mob.png"
             class="image"
             width="100"
             height="30"
@@ -102,32 +178,134 @@
           />
         </picture>
       </a>
-      <div class="header__right">
-        <div class="header__call call">
-          <a href="tel:995265167106" class="call__phone">+ 995 265 167 106</a>
-          <a href="#" class="call__text" data-graph-path="modal-feedback"
-            >Обратный звонок</a
+
+      <button class="btn btn-reset mob-menu__item-btn-close" data-menu-close>
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mob-menu__list list-reset">
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link" data-menu-item>Магазин</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link" data-menu-item>Контакты</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#services" class="mob-menu__link" data-menu-item>О компании</a>
+      </li>
+      <li class="mob-menu__item mob-menu__item-lang">
+        <a href="#" class="mob-menu__link" data-menu-item>Язык</a>
+      </li>
+    </ul>
+    <div class="feedback__form mob-menu-nav__item-form">
+      <div class="titles">
+        <h2 class="title">Обратный звонок</h2>
+      </div>
+      <p class="form__text">
+        Оставьте заявку и наш менеджер перезвонит вам <br />
+        в течение 15 минут
+      </p>
+      <form action="#" class="form">
+        <label class="form__label form__label--name">
+          <input
+            type="text"
+            name="Имя"
+            class="input-reset form__input"
+            placeholder="Ваше Имя"
+          />
+        </label>
+        <label class="form__label form__label--phone">
+          <input
+            type="tel"
+            name="Телефон"
+            class="input-reset form__input"
+            placeholder="Ваш телефон"
+          />
+        </label>
+
+        <span class="form__notice"
+          >Нажимая кнопку «Оставить заявку» Вы даете согласие на обработку ваших
+          персональных данных</span
+        >
+
+        <button class="btn-reset form__btn btn btn-primary">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </nav>
+</div>
+
+      <div class="graph-modal">
+  <div
+    class="graph-modal__container"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="modal-feedback"
+  >
+    <button
+      class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    ></button>
+
+    <div class="graph-modal__content feedback__container">
+      <div class="feedback__form">
+        <div class="titles">
+          <h5 class="subtitle">#Обратнаясвязь</h5>
+          <h2 class="title">Обратный звонок</h2>
+        </div>
+        <p class="form__text">
+          Оставьте заявку и наш менеджер перезвонит вам в течение 15 минут
+        </p>
+        <form action="#" class="form">
+          <label class="form__label form__label--name">
+            <input
+              type="text"
+              name="Имя"
+              class="input-reset form__input"
+              placeholder="Ваше Имя"
+            />
+          </label>
+          <label class="form__label form__label--phone">
+            <input
+              type="tel"
+              name="Телефон"
+              class="input-reset form__input"
+              placeholder="Ваш телефон"
+            />
+          </label>
+
+          <span class="form__notice"
+            >Нажимая кнопку «Оставить заявку» Вы даете согласие на обработку
+            ваших персональных данных</span
           >
-        </div>
-        <div class="header__cart cart">
-          <a href="#" class="cart__link">
-            <svg>
-              <use xlink:href="img/sprite.svg#cart"></use>
-            </svg>
-            <span class="cart__count">0</span>
-          </a>
-        </div>
-        <div class="header__lang lang">
-          <select name="lang" class="lang-choice">
-            <option selected value="ru">RU</option>
-            <option value="en">EN</option>
-            <option value="ge">GE</option>
-          </select>
-        </div>
+
+          <button class="btn-reset form__btn btn btn-primary">
+            Заказать звонок
+          </button>
+        </form>
+      </div>
+
+      <div class="feedback__image">
+        <picture>
+          <source srcset="img/modal-img.avif" type="image/avif" />
+          <source srcset="img/modal-img.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            src="img/modal-img.jpg"
+            class="image"
+            width="550"
+            height="640"
+            alt="Feedback img"
+          />
+        </picture>
       </div>
     </div>
   </div>
-</header>
+</div>
  <div class="graph-modal">
   <div
     class="graph-modal__container"
@@ -139,6 +317,7 @@
       class="btn-reset js-modal-close graph-modal__close"
       aria-label="Закрыть модальное окно"
     ></button>
+
     <div class="graph-modal__content feedback__container">
       <div class="feedback__form">
         <div class="titles">
@@ -914,7 +1093,7 @@
   </div>
 </section>
 
-        <section class="services">
+        <section class="services" id="services">
   <div class="services__inner">
     <div class="services__info">
       <div class="services__body">
@@ -1101,7 +1280,7 @@
             />
           </picture>
         </a>
-        <nav class="nav footer-nav">
+        <nav class="nav footer-nav" data-da=".footer__top,1200,1">
           <ul class="nav__list footer-nav__list list-reset">
             <li class="nav__item footer-nav__item">
               <a href="#" class="footer-nav__link nav__link">Магазин</a>
