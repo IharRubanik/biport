@@ -2,21 +2,25 @@
   margin-bottom: 9.013vw;
   padding-top: 3.646vw;
   &__slide {
-    &--first {
-      background: url("../img/banner1.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    &--second {
-      background: url("../img/banner2.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    height: auto;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
     }
   }
 
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+
   &__content {
+    position: relative;
+    top: 0;
+    left: 15.7vw;
+    height: 100%;
+
     padding: 0 2.083vw 3.646vw;
     background-color: var(--main-black);
     color: var(--light);
@@ -39,19 +43,16 @@
     margin-bottom: 4.867vw;
   }
 
-  &__btns {
-    display: flex;
-    justify-content: center;
-  }
-
   &__btn-primary {
     margin-right: 2vw;
   }
 
   //hover-btns
   &__btn-next {
+    margin-top: 0;
+    height: 100%;
     transform: translateX(2vw);
-    top: 24vw;
+    top: 0;
     right: 7.292vw;
     color: var(--main-green-dark);
     &::after {
@@ -63,7 +64,7 @@
       position: absolute;
       right: -10vw;
       width: 20.45vw;
-      height: 100vw;
+      height: 100%;
       background: rgba(0, 0, 0, 0.4);
       z-index: -1;
       opacity: 0;
@@ -85,8 +86,10 @@
   }
 
   &__btn-prev {
+    margin-top: 0;
+    height: 100%;
     transform: translateX(-2vw);
-    top: 24vw;
+    top: 0;
     left: 7.292vw;
     color: var(--main-green-dark);
     &::after {
@@ -98,7 +101,7 @@
       position: absolute;
       left: -10vw;
       width: 20.45vw;
-      height: 100vw;
+      height: 100%;
       background: rgba(0, 0, 0, 0.4);
       z-index: -1;
       opacity: 0;
@@ -145,14 +148,13 @@
   }
 }
 
-//mob-menu
-
 //hero
 @include tablet {
   .hero {
     margin-bottom: 13.021vw;
 
     &__content {
+      left: 3vw;
       padding: 3.906vw 2.604vw 13.021vw;
       max-width: 56.313vw;
       margin-left: 8.021vw;
@@ -185,15 +187,11 @@
 
     //hover-btns
     &__btn-next {
-      top: 50%;
       right: 7vw;
       &::after {
         font-size: 8.883vw;
       }
       &::before {
-        //right: -11.925vw;
-        //width: 23vw;
-        //height: 156.25vw;
         display: none;
       }
     }
@@ -211,17 +209,24 @@
     }
 
     &__btn-prev {
-      transform: translateX(-24px);
-      top: 50%;
       left: 7vw;
       &::after {
         font-size: 8.883vw;
       }
       &::before {
-        //left: -11.925vw;
-        //width: 23vw;
-        //height: 156.25vw;
         display: none;
+      }
+    }
+
+    @include for-desktop {
+      &__btn-prev:hover {
+        &::after {
+          transform: translateX(0);
+          color: var(--light);
+        }
+        &::before {
+          display: none;
+        }
       }
     }
 

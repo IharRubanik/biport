@@ -70,3 +70,9 @@
     }
   }
 }
+
+@include mobile {
+  .action {
+    display: none;
+  }
+}

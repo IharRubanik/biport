@@ -167,3 +167,31 @@
     }
   }
 }
+
+@include mobile {
+  .header {
+    padding: 2.333vw 0vw;
+
+    &__logo {
+      width: 22.4vw;
+      height: 8vw;
+    }
+  }
+
+  //call
+  .call {
+    &__phone {
+      svg {
+        width: 6.133vw;
+        height: 6.133vw;
+      }
+    }
+  }
+
+  //burger
+  .burger {
+    @include burger;
+    color: var(--light);
+    width: 9.333vw;
+  }
+}

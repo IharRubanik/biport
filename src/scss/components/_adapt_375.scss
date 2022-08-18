@@ -1,0 +1,134 @@
+@include mobile {
+  .hero {
+    margin-bottom: 33.799px;
+    padding-top: 13.672px;
+    &__slide {
+      //background-size: 300px 300px;
+    }
+
+    &__content {
+      padding: 0 7.811px 13.672px;
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 13.477px;
+      line-height: 15.431px;
+      margin-bottom: 5.899px;
+    }
+
+    &__text {
+      font-size: 4.372px;
+      font-weight: 300;
+      line-height: 6.806px;
+      margin-bottom: 18.251px;
+    }
+
+    &__btns {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__btn-primary {
+      margin-right: 7.5px;
+    }
+
+    //hover-btns
+    &__btn-next {
+      transform: translateX(7.5px);
+      top: 90px;
+      right: 27.345px;
+      color: var(--main-green-dark);
+      &::after {
+        font-size: 11.719px;
+        transition: all 0.5s;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: -37.5px;
+        width: 76.688px;
+        height: 375px;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+    }
+
+    @include for-desktop {
+      &__btn-next:hover {
+        &::after {
+          transform: translateX(-3.75px);
+          color: var(--light);
+        }
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__btn-prev {
+      transform: translateX(-7.5px);
+      top: 90px;
+      left: 27.345px;
+      color: var(--main-green-dark);
+      &::after {
+        font-size: 11.719px;
+        transition: all 0.5s;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: -37.5px;
+        width: 76.688px;
+        height: 375px;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+    }
+
+    @include for-desktop {
+      &__btn-prev:hover {
+        &::after {
+          transform: translateX(3.75px);
+          color: var(--light);
+        }
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    //swiper-pagination
+    .swiper-pagination {
+      text-align: initial;
+      position: static;
+      margin-top: 12.532px;
+      margin-bottom: 19.361px;
+    }
+
+    .swiper-pagination-fraction {
+      color: rgba(97, 93, 93, 0.493);
+      font-size: 13.515px;
+    }
+
+    .swiper-pagination-current,
+    .current {
+      font-size: 31.249px;
+      color: grey;
+    }
+
+    .swiper-pagination-total,
+    .total {
+      font-size: 11.287px;
+      color: rgba(97, 93, 93, 0.493);
+      font-weight: 200;
+    }
+  }
+}
