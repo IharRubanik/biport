@@ -24,8 +24,12 @@
   //about-swiper
   &__slide {
     margin-bottom: 2.604vw;
+    border-radius: 1.042vw;
+    overflow: hidden;
+    height: 32.813vw;
+    width: 32.552vw;
     img {
-      overflow: hidden;
+      height: 100%;
       width: 100%;
     }
   }
