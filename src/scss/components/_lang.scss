@@ -131,4 +131,44 @@
     font-size: 2.114vw;
     color: var(--main-green);
   }
+
+  .choices[data-type*="select-one"].is-open:after {
+    margin-top: -1vw;
+  }
+
+  .choices[data-type*="select-one"]::after {
+    right: 1.667vw;
+    top: 50%;
+  }
+}
+
+@include mobile {
+  .choices {
+    width: 16vw;
+    height: 6.933vw;
+    border-radius: 4.267vw;
+  }
+
+  .choices__inner {
+    font-size: 4.267vw;
+    line-height: 5.067vw;
+    width: 100%;
+  }
+
+  .choices__item--selectable {
+    padding-left: 2.667vw;
+  }
+
+  .choices__list--dropdown .choices__item,
+  .choices__list[aria-expanded] .choices__item {
+    font-size: 4.267vw;
+  }
+
+  .choices[data-type*="select-one"]::after {
+    right: 2.667vw;
+  }
+
+  .choices[data-type*="select-one"].is-open:after {
+    margin-top: -2vw;
+  }
 }

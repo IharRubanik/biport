@@ -16,6 +16,14 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
 
+    &__close {
+      padding: 0;
+      svg {
+        width: 2.839vw;
+        height: 2.839vw;
+      }
+    }
+
     &__burger {
       color: var(--main-black) !important;
       pointer-events: none;
@@ -31,8 +39,7 @@
     &__list {
       flex-direction: column;
       align-items: flex-start;
-      padding: 0 2vw 3vw;
-      margin-top: 3.333vw;
+      padding: 7vw 2vw;
       position: relative;
       &::after {
         content: "";
@@ -76,14 +83,6 @@
     &__item-lang,
     &__item-form {
       display: block;
-    }
-
-    &__item-btn-close {
-      padding: 0;
-      svg {
-        width: 2.839vw;
-        height: 2.839vw;
-      }
     }
 
     &__item-lang {
@@ -148,4 +147,108 @@
 
 .menu--active {
   transform: translate(0);
+}
+
+@include mobile {
+  .mob-menu {
+    &__top {
+      padding: 2.995vw 1.953vw;
+    }
+
+    &__logo {
+      width: 22.4vw;
+      height: 8vw;
+    }
+
+    &__close {
+      svg {
+        width: 5.6vw;
+        height: 5.6vw;
+      }
+    }
+
+    &__nav {
+      width: 100%;
+    }
+
+    &__list {
+      padding: 10.845vw 2.667vw;
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 6.667vw;
+      }
+    }
+
+    &__item-btn-close {
+      padding: 0;
+      svg {
+        width: 2.839vw;
+        height: 2.839vw;
+      }
+    }
+
+    &__item-lang {
+      .mob-menu__link {
+        padding-right: 4.8vw;
+      }
+    }
+
+    &__link {
+      font-size: 6.4vw;
+      line-height: 6.133vw;
+    }
+
+    //form
+    .feedback__form {
+      width: 100%;
+      padding: 5.333vw 4vw;
+
+      .titles {
+        margin-bottom: 4.267vw;
+        .title {
+          font-size: 8vw;
+          line-height: 10.667vw;
+        }
+      }
+
+      .form__text {
+        font-size: 3.733vw;
+        line-height: 5.333vw;
+        margin-bottom: 8.533vw;
+      }
+
+      .form__label {
+        &::before {
+          top: -1vw;
+          width: 5.667vw;
+          height: 5.667vw;
+        }
+      }
+
+      .form__input {
+        font-size: 3.733vw;
+        padding-left: 10.037vw;
+        padding-bottom: 3vw;
+        margin-bottom: 6.133vw;
+      }
+
+      .form__notice {
+        margin-bottom: 4vw;
+        font-size: 3.2vw;
+        line-height: 6.8vw;
+      }
+      .form__btn {
+        padding: 4.086vw 13.393vw;
+        font-size: 4.267vw;
+        line-height: 4.8vw;
+        border-radius: 17.067vw;
+      }
+    }
+  }
 }

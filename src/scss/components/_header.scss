@@ -192,6 +192,7 @@
   .burger {
     @include burger;
     color: var(--light);
-    width: 9.333vw;
+    width: 8.333vw;
+    height: 5.5vw;
   }
 }

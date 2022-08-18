@@ -3,6 +3,9 @@
   padding-top: 3.646vw;
   &__slide {
     height: auto;
+  }
+
+  &__slide-image {
     img {
       position: absolute;
       width: 100%;
@@ -154,10 +157,9 @@
     margin-bottom: 13.021vw;
 
     &__content {
-      left: 3vw;
+      left: 13vw;
       padding: 3.906vw 2.604vw 13.021vw;
       max-width: 56.313vw;
-      margin-left: 8.021vw;
     }
 
     &__title {
@@ -249,6 +251,91 @@
     .swiper-pagination-total,
     .total {
       font-size: 5.859vw;
+    }
+  }
+}
+
+@include mobile {
+  .hero {
+    margin-bottom: 18.667vw;
+    padding-top: 0;
+
+    &__slide-image {
+      img {
+        display: block;
+        position: static;
+        height: 73.6vw;
+      }
+    }
+
+    &__content {
+      position: static;
+      padding: 9.333vw 4vw;
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 10.133vw;
+      line-height: 10.667vw;
+      margin-bottom: 5.333vw;
+    }
+
+    &__text {
+      font-size: 3.733vw;
+      line-height: 5.333vw;
+      margin-bottom: 8vw;
+    }
+
+    &__btns {
+      .btn {
+        font-size: 4.265vw;
+        line-height: 4.531vw;
+        padding: 5.335vw 18.453vw;
+        border-radius: 17.067vw;
+      }
+    }
+
+    //hover-btns
+    &__btn-next {
+      height: 10vw;
+      top: 18%;
+      right: 2.667vw;
+      &::after {
+        font-size: 5.525vw;
+      }
+    }
+
+    &__btn-prev {
+      height: 10vw;
+      top: 18%;
+      left: 2.667vw;
+      &::after {
+        font-size: 5.333vw;
+      }
+    }
+
+    //swiper-pagination
+    .swiper-pagination {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .swiper-pagination-fraction {
+      font-size: 10.067vw;
+      line-height: 20vw;
+    }
+
+    .swiper-pagination-current,
+    .current {
+      font-size: 17.067vw;
+      line-height: 20vw;
+      color: grey;
+    }
+
+    .swiper-pagination-total,
+    .total {
+      font-size: 5.333vw;
+      line-height: 6.4vw;
     }
   }
 }

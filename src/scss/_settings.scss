@@ -108,13 +108,13 @@ a {
   }
 }
 
-//@include mobile {
-//  .container {
-//    max-width: 344.924vw;
-//    margin: 0 auto;
-//    padding: 0 4.04vw;
-//  }
-//}
+@include mobile {
+  .container {
+    max-width: 344.924vw;
+    margin: 0 auto;
+    padding: 0 4.04vw;
+  }
+}
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;

@@ -13,9 +13,8 @@
 
   &__slide {
     overflow: hidden;
-    height: auto;
-    border-radius: 1.042vw;
     color: var(--light);
+    border-radius: 1.042vw;
     img {
       height: 12.5vw;
       width: 100%;
@@ -111,12 +110,13 @@
 
     //content
     &__wrapper {
-      margin-bottom: 3.906vw;
+      margin-bottom: 5.906vw;
     }
 
     &__slide {
-      min-height: 69.661vw;
+      border-radius: 2vw;
       img {
+        height: 31.25vw;
         width: 100%;
       }
     }
@@ -159,6 +159,67 @@
 
     .swiper-button-prev {
       margin-right: 1.563vw;
+    }
+  }
+}
+
+@include mobile {
+  .info {
+    margin-bottom: 13.333vw;
+
+    //content
+    &__wrapper {
+      margin-bottom: 12.333vw;
+    }
+
+    &__slide {
+      border-radius: 4vw;
+      img {
+        width: 100%;
+        height: 58.667vw;
+      }
+    }
+
+    &__text {
+      padding: 8vw 5.333vw;
+    }
+
+    &__num {
+      top: 10.333vw;
+      left: 5.333vw;
+      font-size: 18.667vw;
+      line-height: 2.133vw;
+    }
+
+    &__title {
+      font-size: 6.4vw;
+      line-height: 6.133vw;
+      margin-bottom: 2.933vw;
+    }
+
+    &__descr {
+      font-size: 3.733vw;
+      line-height: 5.333vw;
+    }
+
+    //info-swiper
+    .swiper-slide {
+      min-height: 69.704vw;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 6.667vw;
+    }
+
+    .swiper-button-prev {
+      margin-right: 4.23vw;
     }
   }
 }

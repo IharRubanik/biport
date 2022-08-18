@@ -63,6 +63,7 @@ const infoSwiper = new Swiper(".info__swiper", {
   slidesPerGroup: 2,
   spaceBetween: 20,
   loop: false,
+  autoHeight: true,
   centeredSlides: false,
   keyboard: {
     enabled: true,
@@ -87,10 +88,10 @@ const infoSwiper = new Swiper(".info__swiper", {
   },
 
   breakpoints: {
-    375: {
+    0: {
       slidesPerView: 1,
     },
-    768: {
+    375: {
       slidesPerView: 1.7,
     },
     1200: {
@@ -119,7 +120,7 @@ const servicesSwiper = new Swiper(".services__swiper", {
   },
 
   breakpoints: {
-    375: {
+    0: {
       slidesPerView: 1,
     },
     768: {
