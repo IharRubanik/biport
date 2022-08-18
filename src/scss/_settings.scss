@@ -25,6 +25,7 @@ p {
 }
 
 .page {
+  position: inherit !important;
   height: 100%;
   font-family: var(--font-family-Roboto, sans-serif);
   -webkit-text-size-adjust: 100%;

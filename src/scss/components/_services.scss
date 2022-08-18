@@ -35,7 +35,6 @@
   }
 
   &__wrapper {
-    display: flex;
     margin-bottom: 2.604vw;
   }
 
@@ -77,13 +76,11 @@
 .services-slide {
   display: flex;
   flex-direction: column;
-  height: auto;
   width: 20.025vw;
   &__img {
-    height: 10.5vw;
     margin-bottom: 1.563vw;
     img {
-      height: 100%;
+      height: 10.5vw;
       width: 100%;
       border-radius: 0.789vw;
     }
@@ -98,9 +95,6 @@
   }
   &__body {
     margin-bottom: 1.742vw;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
   }
 
   &__descr {
@@ -151,6 +145,7 @@
     .swiper__btns {
       justify-content: flex-end;
       transform: translateX(-4vw);
+      margin-top: 5vw;
     }
 
     .swiper-button-next,
@@ -175,11 +170,11 @@
     width: 20.025vw;
     margin-bottom: 3.906vw;
     &__img {
-      height: 31.25vw;
       margin-bottom: 3.906vw;
       img {
-        height: 100%;
+        height: 31.25vw;
         width: 100%;
+        border-radius: 2vw;
       }
     }
 
@@ -201,6 +196,106 @@
     &__link {
       font-size: 2.083vw;
       line-height: 2.344vw;
+    }
+  }
+}
+
+@include mobile {
+  .services {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+
+    &__info {
+      width: 100%;
+      padding: 8vw 4vw 15.2vw;
+    }
+
+    .title {
+      margin-bottom: 3.906vw;
+    }
+
+    .subtitle {
+      margin-bottom: 1.302vw;
+    }
+
+    &__descr {
+      font-size: 3.733vw;
+      line-height: 5.333vw;
+      margin-bottom: 6.667vw;
+    }
+
+    &__btn {
+      width: 100%;
+      font-size: 4.265vw;
+      line-height: 4.531vw;
+      padding: 4.335vw 18.453vw;
+      border-radius: 17.067vw;
+    }
+
+    &__right {
+      width: 100%;
+      padding: 17.333vw 4vw 7vw;
+    }
+
+    &__wrapper {
+      margin-bottom: 12.604vw;
+    }
+
+    //btns-swiper
+    .swiper__btns {
+      transform: translateX(0);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 15.5vw;
+      height: 15.5vw;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 6.667vw;
+    }
+
+    .swiper-button-prev {
+      margin-right: 4.23vw;
+    }
+  }
+
+  //services-slide
+  .services-slide {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5.333vw;
+    &__img {
+      margin-bottom: 5.333vw;
+      img {
+        border-radius: 4vw;
+        height: 50.667vw;
+        width: 100%;
+      }
+    }
+
+    &__body {
+      margin-bottom: 5.333vw;
+      flex: 0 0 auto;
+    }
+
+    &__title {
+      margin-bottom: 2.667vw;
+      font-size: 6.4vw;
+      line-height: 6.183vw;
+    }
+
+    &__descr {
+      font-size: 3.733vw;
+      line-height: 5.333vw;
+    }
+
+    &__link {
+      font-size: 3.733vw;
+      line-height: 4.267vw;
     }
   }
 }

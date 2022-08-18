@@ -59,8 +59,6 @@ const aboutSwiper = new Swiper(".about__swiper", {
 //info-swiper
 Swiper.use([Navigation, Pagination, Keyboard]);
 const infoSwiper = new Swiper(".info__swiper", {
-  slidesPerView: 2.85,
-  slidesPerGroup: 2,
   spaceBetween: 20,
   loop: false,
   autoHeight: true,
@@ -90,12 +88,15 @@ const infoSwiper = new Swiper(".info__swiper", {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
-    375: {
+    376: {
       slidesPerView: 1.7,
+      slidesPerGroup: 1,
     },
     1200: {
       slidesPerView: 2.85,
+      slidesPerGroup: 2,
     },
   },
 });
@@ -103,11 +104,9 @@ const infoSwiper = new Swiper(".info__swiper", {
 //services-swiper
 Swiper.use([Navigation, Pagination, Keyboard]);
 const servicesSwiper = new Swiper(".services__swiper", {
-  slidesPerView: "auto",
   slidesPerGroup: 1,
   spaceBetween: 20,
   loop: true,
-  centeredSlides: false,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -122,6 +121,7 @@ const servicesSwiper = new Swiper(".services__swiper", {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      //autoHeight: true,
     },
     768: {
       slidesPerView: 1.16,

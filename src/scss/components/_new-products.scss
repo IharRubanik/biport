@@ -1,7 +1,7 @@
 .new-products {
   padding: 7.113vw 0vw;
   &__tabs {
-    margin-bottom: 1.604vw;
+    margin-bottom: 3.604vw;
   }
 
   &__btn {
@@ -301,6 +301,127 @@
       font-weight: 800;
       font-size: 2.604vw;
       line-height: 2.865vw;
+    }
+  }
+}
+
+@include mobile {
+  .new-products {
+    margin-bottom: 13.334vw;
+    padding: 13.021vw 0vw;
+
+    //radio-buttons
+    .form__radio {
+      &:not(:last-child) {
+        margin-right: 3.2vw;
+      }
+    }
+
+    .form__radio-first:before,
+    .form__radio-second:before,
+    .form__radio-third:before {
+      width: 3.2vw;
+      height: 3.2vw;
+    }
+
+    &__link {
+      padding: 4vw 12.667vw;
+      font-size: 4.267vw;
+      line-height: 4.533vw;
+      border-radius: 17.067vw;
+      width: 100%;
+    }
+
+    //tabs
+    .tabs {
+      .titles {
+        margin-bottom: 5.333vw;
+      }
+
+      &__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 8vw;
+      }
+
+      &__nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        margin-top: 0;
+      }
+
+      &__nav-item {
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+
+      &__nav-btn {
+        padding: 2.267vw 6.333vw;
+        font-size: 5.333vw;
+        line-height: 6.133vw;
+        border-radius: 16.267vw;
+
+        span {
+          font-size: 4.533vw;
+          line-height: 5.6vw;
+        }
+      }
+
+      &__items {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 4vw;
+        margin-bottom: 10.808vw;
+      }
+    }
+  }
+
+  //product
+  .product {
+    padding: 4vw 6.667vw;
+    &__term {
+      font-size: 3.733vw;
+      line-height: 5.747vw;
+      margin-bottom: 5.867vw;
+    }
+
+    &__img {
+      width: 100%;
+      margin: 0 auto 4.8vw;
+      img {
+        height: 80vw;
+        width: 41.867vw;
+      }
+    }
+
+    &__title {
+      margin-bottom: 7.2vw;
+      font-size: 4.267vw;
+      line-height: 6.667vw;
+    }
+
+    &__color {
+      margin-bottom: 2.667vw;
+      span {
+        font-size: 3.733vw;
+        line-height: 5.747vw;
+      }
+    }
+  }
+
+  //price
+  .price {
+    &__old {
+      font-size: 4.267vw;
+      line-height: 5.747vw;
+    }
+
+    &__new {
+      font-size: 5.333vw;
+      line-height: 5.747vw;
     }
   }
 }

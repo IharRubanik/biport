@@ -4,6 +4,7 @@
     width: auto;
     border-radius: 1.042vw;
     padding: 0;
+    margin: 0 auto;
   }
 
   &__close {
@@ -20,5 +21,19 @@
   }
   .title {
     font-size: 2.308vw;
+  }
+}
+
+@include tablet {
+  .graph-modal {
+    top: 0;
+    &::before {
+      height: auto;
+    }
+  }
+
+  .graph-modal__close {
+    top: 3.604vw;
+    right: 3.604vw;
   }
 }

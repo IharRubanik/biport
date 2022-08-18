@@ -60,12 +60,12 @@
 
 .choices[data-type*="select-one"]::after {
   border-color: var(--main-green) transparent transparent;
-  height: 0px;
-  width: 0px;
-  border-width: 3.997px;
-  right: 20.368px;
+  height: 0;
+  width: 0;
+  border-width: 0.208vw;
+  right: 1.061vw;
   top: 50%;
-  margin-top: -1.536px;
+  margin-top: -0.08vw;
 }
 
 .choices__list--dropdown .choices__list,
@@ -86,10 +86,15 @@
   }
 }
 
+.choices[data-type*="select-one"]::after {
+  right: 1.667vw;
+  top: 50%;
+}
+
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
   border: none;
-  margin-top: -1px;
+  margin-top: -0.052vw;
   border-radius: 0.608vw;
   right: 0;
   margin-top: 0.521vw;

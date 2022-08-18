@@ -114,6 +114,7 @@
     }
 
     &__slide {
+      overflow: hidden;
       border-radius: 2vw;
       img {
         height: 31.25vw;

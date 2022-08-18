@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     color: var(--light);
-    margin-bottom: 0.156vw;
+    margin-bottom: 0.256vw;
     svg {
       display: none;
       width: 1.667vw;
@@ -96,6 +96,8 @@
     font-weight: 400;
     font-size: 0.729vw;
     line-height: 0.833vw;
+    text-align: left;
+    outline: none;
   }
 }
 
@@ -104,7 +106,7 @@
   @include burger;
   display: none;
   color: var(--light);
-  width: 35px;
+  width: 4.823vw;
 
   &__line {
     border-radius: 0.333vw;

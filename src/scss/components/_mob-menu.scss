@@ -48,7 +48,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: calc(100% - 2.1vw);
-        border-bottom: 2.004px solid var(--border-color);
+        border-bottom: 0.261vw solid var(--border-color);
       }
     }
 
@@ -77,7 +77,7 @@
       justify-content: space-between;
       width: 100%;
       padding: 2.995vw 1.953vw;
-      border-bottom: 2.004px solid var(--border-color);
+      border-bottom: 0.261vw solid var(--border-color);
     }
 
     &__item-lang,

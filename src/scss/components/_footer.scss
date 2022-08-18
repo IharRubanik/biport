@@ -109,8 +109,6 @@
 
 @include tablet {
   .footer {
-    background-color: var(--main-black);
-
     &__top {
       padding: 7.813vw 3.906vw 5.208vw;
     }
@@ -176,6 +174,88 @@
     &__title {
       font-size: 1.563vw;
       line-height: 3.32vw;
+    }
+  }
+}
+
+@include mobile {
+  .footer {
+    &__top {
+      padding: 13.867vw 0 10.667vw;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    &__logo {
+      width: 58.933vw;
+      height: 21.333vw;
+      transform: translateY(0);
+      margin-bottom: 13.333vw;
+    }
+
+    &__call {
+      margin-bottom: 10.667vw;
+      span {
+        font-size: 9.967vw;
+        line-height: 12.8vw;
+        margin-bottom: 6.667vw;
+      }
+    }
+
+    &__btn {
+      padding: 4.086vw 13.393vw;
+      font-size: 4.267vw;
+      line-height: 4.8vw;
+      border-radius: 17.067vw;
+    }
+
+    &__copyright {
+      padding: 5.333vw 0vw;
+      letter-spacing: 0.26vw;
+    }
+  }
+
+  .footer-nav {
+    margin-bottom: 13.333vw;
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 8.533vw;
+      }
+    }
+
+    &__link {
+      font-size: 4.8vw;
+      line-height: 5.6vw;
+    }
+  }
+
+  .social {
+    &__link {
+      width: 10.667vw;
+      height: 10.667vw;
+      &:not(:last-child) {
+        margin-right: 2.214vw;
+      }
+      svg {
+        width: 5.867vw;
+        height: 5.867vw;
+      }
+    }
+  }
+  .copyright {
+    &__title {
+      font-size: 3.2vw;
+      line-height: 6.8vw;
     }
   }
 }
