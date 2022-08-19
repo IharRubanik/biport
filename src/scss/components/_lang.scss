@@ -95,9 +95,9 @@
 .choices__list[aria-expanded] {
   border: none;
   margin-top: -0.052vw;
-  border-radius: 0.608vw;
+  border-radius: 1.608vw;
   right: 0;
-  margin-top: 0.521vw;
+  margin-top: 1.321vw;
 }
 
 @include tablet {
@@ -150,7 +150,7 @@
 @include mobile {
   .choices {
     width: 16vw;
-    height: 6.933vw;
+    height: 7.933vw;
     border-radius: 4.267vw;
   }
 
@@ -170,10 +170,13 @@
   }
 
   .choices[data-type*="select-one"]::after {
+    top: 3vw;
     right: 2.667vw;
+    border-width: 1.5vw;
   }
 
   .choices[data-type*="select-one"].is-open:after {
     margin-top: -2vw;
+    border-radius: 4.267vw;
   }
 }
