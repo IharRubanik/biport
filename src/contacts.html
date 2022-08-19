@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', { "title": "Контакты" })
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html') @include('partials/mob-menu.html')
+      @include('partials/modal.html') @include('partials/modal.html')
+      @include('partials/action.html')
+      <main class="main">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list list-reset">
+              <li class="breadcrumbs__item-back">
+                <a
+                  href="index.html"
+                  class="breadcrumbs__link breadcrumbs__link-back"
+                >
+                  Назад</a
+                >
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item-main">
+                <a href="index.html" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item-main">
+                <a
+                  href="contacts.html"
+                  class="breadcrumbs__link breadcrumbs__link--active"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <section class="contacts">
+            <div class="titles">
+              <h2 class="title">Контакты</h2>
+            </div>
+            <div class="contacts__inner">
+              <div class="contacts__list list-info">
+                <div class="list-info__item">
+                  <h3 class="list-info__title">Адрес</h3>
+                  <address class="list-info__subtitle list-info--adress">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#pin"></use>
+                    </svg>
+                    улица Александра Пушкина, 147А
+                  </address>
+                </div>
+                <div class="list-info__item">
+                  <h3 class="list-info__title">E-mail</h3>
+                  <a
+                    href="mailto:infothedoors@gmail.com"
+                    class="list-info__link list-info--email"
+                  >
+                    <svg>
+                      <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    infothedoors@gmail.com
+                  </a>
+                </div>
+                <div class="list-info__item">
+                  <h3 class="list-info__title">Телефон</h3>
+                  <a
+                    href="tel:+995265167106"
+                    class="list-info__link list-info--phone"
+                  >
+                    <svg>
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    + 995 265 167 106
+                  </a>
+                </div>
+                <div class="list-info__item info__social">
+                  <h3 class="list-info__title">Мессенджеры</h3>
+                  <div class="info__social-links">
+                    <a
+                      href="#"
+                      class="info__social-link info__social-link--whatsapp"
+                    >
+                      <svg>
+                        <use xlink:href="img/sprite.svg#whatsapp"></use>
+                      </svg>
+                      WhatsApp</a
+                    >
+                    <a
+                      href="#"
+                      class="info__social-link info__social-link--telegram"
+                    >
+                      <svg>
+                        <use xlink:href="img/sprite.svg#telegram"></use>
+                      </svg>
+                      Telegram</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="contacts__map map">
+                <a href="#" class="map__link">
+                  <picture>
+                    <source srcset="img/contacts-map.avif" type="image/avif" />
+                    <source srcset="img/contacts-map.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="img/contacts-map.jpg"
+                      class="image"
+                      width="758"
+                      height="447"
+                      alt="Map"
+                    />
+                  </picture>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#pin-map"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

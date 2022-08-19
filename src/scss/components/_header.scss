@@ -60,10 +60,6 @@
     font-weight: 500;
   }
 
-  &__top {
-    display: none;
-  }
-
   &__item-lang,
   &__item-form {
     display: none;
@@ -184,8 +180,8 @@
   .call {
     &__phone {
       svg {
-        width: 6.133vw;
-        height: 6.133vw;
+        width: 7.133vw;
+        height: 7.133vw;
       }
     }
   }

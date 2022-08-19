@@ -181,7 +181,7 @@
 @include mobile {
   .footer {
     &__top {
-      padding: 13.867vw 0 10.667vw;
+      padding: 53.202px 0 40.002px;
     }
 
     &__menu {
@@ -192,36 +192,36 @@
     }
 
     &__logo {
-      width: 58.933vw;
-      height: 21.333vw;
+      width: 221.598px;
+      height: 80.998px;
       transform: translateY(0);
-      margin-bottom: 13.333vw;
+      margin-bottom: 50.998px;
     }
 
     &__call {
       margin-bottom: 10.667vw;
       span {
-        font-size: 9.967vw;
-        line-height: 12.8vw;
-        margin-bottom: 6.667vw;
+        font-size: 6.8vw;
+        line-height: 7.8vw;
+        margin-bottom: 4.167vw;
       }
     }
 
     &__btn {
       padding: 4.086vw 13.393vw;
-      font-size: 4.267vw;
-      line-height: 4.8vw;
+      font-size: 2.767vw;
+      line-height: 3.133vw;
       border-radius: 17.067vw;
     }
 
     &__copyright {
       padding: 5.333vw 0vw;
-      letter-spacing: 0.26vw;
+      letter-spacing: 1.56px;
     }
   }
 
   .footer-nav {
-    margin-bottom: 13.333vw;
+    margin-bottom: 8.333vw;
     &__list {
       flex-direction: column;
     }
@@ -229,33 +229,33 @@
     &__item {
       &:not(:last-child) {
         margin-right: 0;
-        margin-bottom: 8.533vw;
+        margin-bottom: 5.033vw;
       }
     }
 
     &__link {
-      font-size: 4.8vw;
-      line-height: 5.6vw;
+      font-size: 3.133vw;
+      line-height: 3.6vw;
     }
   }
 
   .social {
     &__link {
-      width: 10.667vw;
-      height: 10.667vw;
+      width: 6.667vw;
+      height: 6.667vw;
       &:not(:last-child) {
-        margin-right: 2.214vw;
+        margin-right: 13.284px;
       }
       svg {
-        width: 5.867vw;
-        height: 5.867vw;
+        width: 3.367vw;
+        height: 3.367vw;
       }
     }
   }
   .copyright {
     &__title {
-      font-size: 3.2vw;
-      line-height: 6.8vw;
+      font-size: 2.033vw;
+      line-height: 4.3vw;
     }
   }
 }

@@ -89,7 +89,7 @@ const infoSwiper = new Swiper(".info__swiper", {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-    376: {
+    600: {
       slidesPerView: 1.7,
       slidesPerGroup: 1,
     },

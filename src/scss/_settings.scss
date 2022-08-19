@@ -39,6 +39,18 @@ p {
 
 .page__body {
   position: inherit !important;
+  height: 100%;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
   background-color: var(--bg-gray);
 }
 
@@ -50,10 +62,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-.site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
 
 .is-hidden {

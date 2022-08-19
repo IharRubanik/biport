@@ -1,0 +1,300 @@
+.contacts {
+  padding: 1.563vw 0vw 7.813vw;
+  .titles {
+    margin-bottom: 1.719vw;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    margin-right: 7.188vw;
+  }
+}
+
+//list-info
+.list-info {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 2.083vw;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.406vw;
+    margin-bottom: 1.302vw;
+  }
+
+  &__link,
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-Helvetica);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.833vw;
+    line-height: 1.302vw;
+    color: #9a9a9a;
+    svg {
+      width: 0.833vw;
+      height: 0.833vw;
+      fill: var(--main-green-dark);
+      margin-right: 0.521vw;
+    }
+  }
+}
+.list-info--adress {
+  svg {
+    width: 1.042vw;
+    height: 1.042vw;
+  }
+}
+
+.list-info--phone {
+  svg {
+    width: 1.042vw;
+    height: 1.042vw;
+  }
+}
+
+//info
+.info {
+  &__social-links {
+    display: flex;
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.052vw solid #d8d8d8;
+    border-radius: 5.208vw;
+    color: #3f3339;
+    height: 3.125vw;
+    width: 9.635vw;
+    font-weight: 400;
+    font-size: 0.833vw;
+    line-height: 1.458vw;
+    svg {
+      width: 1.302vw;
+      height: 1.302vw;
+      fill: var(--main-green-dark);
+      margin-right: 0.573vw;
+    }
+  }
+
+  &__social-link--whatsapp {
+    margin-right: 1.563vw;
+  }
+}
+
+//map
+.map {
+  &__link {
+    display: block;
+    width: 37.604vw;
+    height: 22.969vw;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1.042vw;
+    }
+    svg {
+      position: absolute;
+      top: 39.3%;
+      left: 36%;
+      width: 3.125vw;
+      height: 3.125vw;
+      fill: var(--main-green-dark);
+    }
+  }
+}
+
+@include tablet {
+  .contacts {
+    padding: 2.605vw 0vw 9.115vw;
+    .titles {
+      margin-bottom: 3.255vw;
+    }
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-right: 0;
+      margin-bottom: 5.208vw;
+    }
+  }
+
+  //list-info
+  .list-info {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 3.906vw;
+      }
+    }
+
+    &__title {
+      font-family: var(--font-family-HelveticaNeue);
+      font-size: 3.125vw;
+      line-height: 2.995vw;
+      margin-bottom: 1.953vw;
+    }
+
+    &__link,
+    &__subtitle {
+      font-size: 2.083vw;
+      line-height: 3.32vw;
+      svg {
+        width: 2.083vw;
+        height: 2.083vw;
+        margin-right: 1.302vw;
+      }
+    }
+  }
+  .list-info--adress {
+    svg {
+      width: 2.344vw;
+      height: 2.344vw;
+    }
+  }
+
+  .list-info--phone {
+    svg {
+      width: 2.604vw;
+      height: 2.604vw;
+    }
+  }
+
+  //info
+  .info {
+    &__social-links {
+      justify-content: space-between;
+    }
+
+    &__social-link {
+      height: 7.813vw;
+      width: 44.791vw;
+      font-size: 2.083vw;
+      line-height: 3.646vw;
+      svg {
+        width: 3.255vw;
+        height: 3.255vw;
+        margin-right: 0.964vw;
+      }
+    }
+
+    &__social-link--whatsapp {
+      margin-right: 0;
+    }
+  }
+
+  //map
+  .map {
+    &__link {
+      width: 100%;
+      height: 58.255vw;
+
+      svg {
+        top: 39.3%;
+        left: 36%;
+        width: 7.813vw;
+        height: 7.813vw;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .contacts {
+    padding: 3.333vw 0vw 11.667vw;
+    .titles {
+      margin-bottom: 5vw;
+    }
+
+    &__list {
+      margin-bottom: 6.667vw;
+    }
+  }
+
+  //list-info
+  .list-info {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 5vw;
+      }
+    }
+
+    &__title {
+      font-size: 3vw;
+      line-height: 3.333vw;
+      margin-bottom: 2.5vw;
+    }
+
+    &__link,
+    &__subtitle {
+      font-size: 2.667vw;
+      line-height: 4.167vw;
+      svg {
+        width: 3.083vw;
+        height: 3.083vw;
+        margin-right: 1.802vw;
+      }
+    }
+  }
+  .list-info--adress {
+    svg {
+      width: 3.344vw;
+      height: 3.344vw;
+    }
+  }
+
+  .list-info--phone {
+    svg {
+      width: 3.437vw;
+      height: 3.437vw;
+    }
+  }
+
+  //info
+  .info {
+    &__social-links {
+      flex-direction: column;
+    }
+
+    &__social-link {
+      height: 8.333vw;
+      width: 100%;
+      font-size: 2.667vw;
+      line-height: 4.813vw;
+      svg {
+        width: 4.167vw;
+        height: 4.167vw;
+        margin-right: 1.797vw;
+      }
+    }
+
+    &__social-link--whatsapp {
+      margin-bottom: 3.333vw;
+    }
+  }
+
+  //map
+  .map {
+    &__link {
+      display: block;
+      height: 36.333vw;
+
+      svg {
+        top: 39.5%;
+        left: 37%;
+        width: 4.667vw;
+        height: 4.813vw;
+      }
+    }
+  }
+}
