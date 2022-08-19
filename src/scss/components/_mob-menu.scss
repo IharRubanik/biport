@@ -7,6 +7,8 @@
   .mob-menu {
     display: block;
     width: 100%;
+    min-height: 100vh;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +33,7 @@
 
     &__nav {
       width: 64.453vw;
-      height: 100vh;
+      min-height: 100vh;
       background-color: var(--light);
       overflow: auto;
     }
