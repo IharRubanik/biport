@@ -3,6 +3,7 @@
   align-items: center;
   background-color: transparent;
   border-radius: 1.533vw;
+  width: 4.6vw;
 }
 
 .choices__inner {
@@ -10,10 +11,8 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  font-size: 0.829vw;
   line-height: 0.938vw;
   width: 100%;
-  width: 4.421vw;
 }
 
 .choices__item--selectable {
@@ -94,10 +93,18 @@
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
   border: none;
-  margin-top: -0.052vw;
-  border-radius: 1.608vw;
   right: 0;
-  margin-top: 1.321vw;
+  margin-top: 0.7vw;
+}
+
+.choices[data-type*="select-one"]::after {
+  right: 1.067vw;
+  border-width: 0.4vw;
+  top: 0.8vw;
+}
+
+.choices[data-type*="select-one"].is-open:after {
+  margin-top: -0.5vw;
 }
 
 @include tablet {
@@ -132,7 +139,7 @@
 
   .choices__list--dropdown .choices__item,
   .choices__list[aria-expanded] .choices__item {
-    padding: 0.651vw 1.693vw;
+    padding: 0.651vw 0.89vw;
     font-size: 2.114vw;
     color: var(--main-green);
   }
@@ -143,40 +150,49 @@
 
   .choices[data-type*="select-one"]::after {
     right: 1.667vw;
-    top: 50%;
+    border-width: 0.7vw;
+    top: 1.5vw;
   }
 }
 
 @include mobile {
   .choices {
-    width: 16vw;
-    height: 7.933vw;
-    border-radius: 4.267vw;
+    background-color: var(--main-green-dark);
+    width: 15.798vw;
+    height: 7.451vw;
+    border-radius: 3.8vw;
   }
 
   .choices__inner {
-    font-size: 4.267vw;
-    line-height: 5.067vw;
-    width: 100%;
+    font-size: 3.765vw;
   }
 
   .choices__item--selectable {
-    padding-left: 2.667vw;
+    padding: 1.066vw 2.346vw;
+  }
+
+  .is-open .choices__item {
+    color: var(--light);
+  }
+
+  .choices__list--single {
+    padding: 0;
+    width: 100%;
   }
 
   .choices__list--dropdown .choices__item,
   .choices__list[aria-expanded] .choices__item {
-    font-size: 4.267vw;
-  }
-
-  .choices[data-type*="select-one"]::after {
-    top: 3vw;
-    right: 2.667vw;
-    border-width: 1.5vw;
+    padding: 2.083vw 2.448vw;
+    font-size: 3.765vw;
   }
 
   .choices[data-type*="select-one"].is-open:after {
-    margin-top: -2vw;
-    border-radius: 4.267vw;
+    margin-top: -3.2vw;
+  }
+
+  .choices[data-type*="select-one"]::after {
+    right: 2.334vw;
+    border-width: 2.04vw;
+    top: 3.2vw;
   }
 }
