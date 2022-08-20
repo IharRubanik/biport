@@ -26,6 +26,7 @@
 
 @include tablet {
   .graph-modal {
+    padding: 12.526vw 3.906vw !important;
     top: 0;
     &::before {
       height: auto;
