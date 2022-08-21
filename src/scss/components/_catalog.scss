@@ -55,7 +55,11 @@
       display: flex;
       flex-direction: column;
       align-items: initial;
-      margin-bottom: 2.604vw;
+    }
+
+    &__panel {
+      padding: 2.083vw 0vw;
+      width: 47.583vw;
     }
 
     &__nav {
@@ -71,33 +75,25 @@
     }
 
     &__nav-btn {
+      background-color: var(--light);
+      color: var(--main-black);
+      border: 0.052vw solid var(--main-black);
       padding: 0.521vw 1.683vw;
       color: var(--main-black);
       font-weight: 400;
       font-size: 1.042vw;
       line-height: 1.1;
-      border: 0.052vw solid transparent;
       span {
         font-weight: 400;
         font-size: 0.833vw;
         line-height: 1.1em;
         color: rgb(176, 171, 171);
         margin-left: 0.26vw;
+        pointer-events: none;
       }
     }
 
-    &__nav-btn--doors {
-      background-color: var(--main-green-dark);
-      color: var(--light);
-    }
-
-    &__nav-btn--parquet {
-      background-color: var(--light);
-      color: var(--main-black);
-      border: 0.052vw solid var(--main-black);
-    }
-
-    &__nav-btn--filter {
+    &__nav-btn-filter {
       display: none;
       align-items: center;
       justify-content: center;
@@ -114,6 +110,16 @@
         width: 1.042vw;
         height: 1.042vw;
         margin-left: 0.885vw;
+        pointer-events: none;
+      }
+    }
+
+    &__nav-btn--active {
+      background-color: var(--main-green-dark);
+      color: var(--light);
+      border: 1px solid transparent;
+      svg {
+        fill: var(--light);
       }
     }
 
@@ -125,11 +131,29 @@
       grid-row-gap: 1.242vw;
     }
   }
+
+  //product
+  .product {
+    width: 15.469vw;
+    padding: 1.094vw 1.146vw 0.3vw;
+
+    &__img {
+      img {
+        width: 7.292vw;
+        height: 14.063vw;
+      }
+    }
+
+    &__body-color {
+      label {
+        padding-left: 1.5vw;
+      }
+    }
+  }
 }
 
 //filter
 .filter {
-
   &__items {
     margin-bottom: 2.604vw;
   }
@@ -240,9 +264,6 @@
 
 //filter-accordion
 .filter__accordion {
-  &-item {
-  }
-
   &-header {
     font-weight: 700;
     margin-bottom: 15px;
@@ -470,7 +491,7 @@
   justify-content: space-between;
   align-items: center;
   border-top: 0.052vw solid #c5c0c0;
-  padding-top: 1.042vw;
+  padding-top: 1.563vw;
   &__left {
     display: flex;
     align-items: center;
