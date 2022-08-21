@@ -12,10 +12,11 @@
       &::after {
         content: "";
         position: absolute;
-        top: 0.5vw;
+        top: 0;
         right: 0;
+        transform: translateY(30%);
         width: 0.078vw;
-        height: 50%;
+        height: 60%;
         background-color: var(--gray);
       }
     }
@@ -41,10 +42,14 @@
   .breadcrumbs {
     padding-top: 13.156vw;
 
-    &__item {
+    &__item-main {
       &:not(:last-child) {
         padding-right: 1.954vw;
         margin-right: 1.954vw;
+        &::after {
+          height: 100%;
+          transform: translateY(0);
+        }
       }
     }
 

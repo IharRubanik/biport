@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', { "title": "Каталог" })
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html') @include('partials/mob-menu.html')
+      @include('partials/modal.html') @include('partials/modal.html')
+      @include('partials/action.html')
+      <main class="main">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list list-reset">
+              <li class="breadcrumbs__item-back">
+                <a
+                  href="index.html"
+                  class="breadcrumbs__link breadcrumbs__link-back"
+                >
+                  Назад</a
+                >
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item-main">
+                <a href="index.html" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item-main">
+                <a
+                  href="contacts.html"
+                  class="breadcrumbs__link breadcrumbs__link--active"
+                  >Каталог</a
+                >
+              </li>
+            </ul>
+          </div>
+          <section class="catalog">
+            <div class="catalog__inner">
+              <div class="catalog__filter">
+                <div class="titles">
+                  <h2 class="title">Двери</h2>
+                </div>
+                <div class="filter">
+                  <div class="filter__items">
+                    <div class="filter__item">
+                      <h4 class="filter__title filter__title-price">
+                        Стоимость
+                      </h4>
+                      <div class="filter-price">
+                        <div class="filter-price__wrapper">
+                          <input
+                            type="text"
+                            class="filter-price__input"
+                            id="min"
+                          />
+                          <input
+                            type="text"
+                            class="filter-price__input"
+                            id="max"
+                          />
+                        </div>
+                        <div
+                          class="filter-price__element"
+                          id="range-slider"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="filter__item filter__accordion">
+                      <div class="filter__accordion-item">
+                        <div class="filter__accordion-header">
+                          <h4 class="filter__title">Коллекция</h4>
+                          <svg class="filter__accordion-icon">
+                            <use xlink:href="img/sprite.svg#faq"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__accordion-body">
+                          <label>
+                            <input type="radio" name="collection" />
+                            <span></span>
+                            Коллекция 1
+                          </label>
+                          <label>
+                            <input type="radio" name="collection" />
+                            <span></span>
+                            Коллекция 2
+                          </label>
+                          <label>
+                            <input type="radio" name="collection" />
+                            <span></span>
+                            Все
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter__item filter__accordion">
+                      <div class="filter__accordion-item">
+                        <div class="filter__accordion-header">
+                          <h4 class="filter__title">Материал</h4>
+                          <svg class="filter__accordion-icon">
+                            <use xlink:href="img/sprite.svg#faq"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__accordion-body">
+                          <label>
+                            <input type="radio" name="materials" />
+                            <span></span>
+                            Пластик
+                          </label>
+                          <label>
+                            <input type="radio" name="materials" />
+                            <span></span>
+                            Металл
+                          </label>
+                          <label>
+                            <input type="radio" name="materials" />
+                            <span></span>
+                            Все
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter__item filter__accordion">
+                      <div class="filter__accordion-item">
+                        <div class="filter__accordion-header">
+                          <h4 class="filter__title">Цвет</h4>
+                          <svg class="filter__accordion-icon">
+                            <use xlink:href="img/sprite.svg#faq"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__accordion-body-color">
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-1"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-2"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-3"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-4"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-5"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-6"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-7"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-8"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-9"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-10"></span>
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span class="color-11"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter__item filter__accordion">
+                      <div class="filter__accordion-item">
+                        <div class="filter__accordion-header">
+                          <h4 class="filter__title">Тип двери</h4>
+                          <svg class="filter__accordion-icon">
+                            <use xlink:href="img/sprite.svg#faq"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__accordion-body">
+                          <label>
+                            <input type="radio" name="type" />
+                            <span></span>
+                            Глухая
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span></span>
+                            Остекленная
+                          </label>
+                          <label>
+                            <input type="radio" name="type" />
+                            <span></span>
+                            Все
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter__item filter__accordion">
+                      <div class="filter__accordion-item">
+                        <div class="filter__accordion-header">
+                          <h4 class="filter__title">Багет</h4>
+                          <svg class="filter__accordion-icon">
+                            <use xlink:href="img/sprite.svg#faq"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__accordion-body">
+                          <label>
+                            <input type="radio" name="baget" />
+                            <span></span>
+                            Багет
+                          </label>
+
+                          <label>
+                            <input type="radio" name="baget" />
+                            <span></span>
+                            Все
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter__item filter__accordion">
+                      <div class="filter__accordion-item">
+                        <div class="filter__accordion-header">
+                          <h4 class="filter__title">По направлению шпона</h4>
+                          <svg class="filter__accordion-icon">
+                            <use xlink:href="img/sprite.svg#faq"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__accordion-body">
+                          <label>
+                            <input type="radio" name="baget" />
+                            <span></span>
+                            Горизонтальный шпон
+                          </label>
+
+                          <label>
+                            <input type="radio" name="baget" />
+                            <span></span>
+                            Вертикальный шпон
+                          </label>
+
+                          <label>
+                            <input type="radio" name="baget" />
+                            <span></span>
+                            Все
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-reset btn-secondary filter__btn">
+                    Сбросить
+                  </button>
+                </div>
+              </div>
+              <div class="catalog__tabs tabs" data-tabs="new-products">
+                <div class="tabs__inner">
+                  <ul class="tabs__nav">
+                    <li class="tabs__nav-item tabs__nav-item--doors">
+                      <button
+                        class="tabs__nav-btn tabs__nav-btn--doors btn btn-reset"
+                        type="button"
+                      >
+                        Двери <span>(210)</span>
+                      </button>
+                    </li>
+                    <li class="tabs__nav-item tabs__nav-item--parquet">
+                      <button
+                        class="tabs__nav-btn tabs__nav-btn--parquet btn btn-reset"
+                        type="button"
+                      >
+                        Паркет <span>(68)</span>
+                      </button>
+                    </li>
+                    <li class="tabs__nav-item tabs__nav-item--parquet">
+                      <button
+                        class="tabs__nav-btn--filter btn btn-reset"
+                        type="button"
+                      >
+                        Фильтры
+                        <svg>
+                          <use xlink:href="img/sprite.svg#filter"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="catalog__sort">
+                    <div class="filter__accordion-item filter__accordion-sort">
+                      <div class="filter__accordion-header">
+                        <h3 class="filter__accordion-title">Сортировать:</h3>
+                        <svg class="filter__accordion-icon">
+                          <use xlink:href="img/sprite.svg#faq"></use>
+                        </svg>
+                      </div>
+                      <div class="filter__accordion-body">
+                        <label>
+                          <input type="radio" name="sort" />
+                          <span></span>
+                          По умолчанию
+                        </label>
+                        <label>
+                          <input type="radio" name="sort" />
+                          <span></span>
+                          По цене
+                        </label>
+                      </div>
+                    </div>
+                    <div class="catalog__total">
+                      <span class="catalog__total-title">Всего товаров:</span>
+                      <span class="catalog__total-num">10000000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content">
+                  <div class="tabs__panel">
+                    <div class="tabs__items">
+                      <!--<a href="#" class="tabs__item product">
+                        <span class="product__term">#624553</span>
+                        <div class="product__img">
+                          <picture>
+                            <source
+                              srcset="img/product.avif"
+                              type="image/avif"
+                            />
+                            <source
+                              srcset="img/product.webp"
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              src="img/product.jpg"
+                              class="image"
+                              width="190"
+                              height="367"
+                              alt="Product"
+                            />
+                          </picture>
+                        </div>
+                        <h3 class="product__title">
+                          Dark Side LB - 182 Steel quartet
+                        </h3>
+                        <div class="product__bottom">
+                          <div class="product__color">
+                            <span>Maple</span>
+                            <div class="form">
+                              <div class="form__radio">
+                                <label
+                                  class="form__label form__radio-first"
+                                ></label>
+                                <input
+                                  type="radio"
+                                  value="1"
+                                  name="nameradio"
+                                  class="input-reset form__input"
+                                />
+                              </div>
+
+                              <div class="form__radio">
+                                <label
+                                  class="form__label form__radio-second"
+                                ></label>
+                                <input
+                                  type="radio"
+                                  value="2"
+                                  name="nameradio"
+                                  class="input-reset form__input"
+                                />
+                              </div>
+
+                              <div class="form__radio">
+                                <label
+                                  class="form__label form__radio-third"
+                                ></label>
+                                <input
+                                  type="radio"
+                                  value="3"
+                                  name="nameradio"
+                                  class="input-reset form__input"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product__price price">
+                            <div class="price__old">$ <span>215</span></div>
+                            <div class="price__new">
+                              $
+                              <span>266</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>-->
+                    </div>
+                  </div>
+
+                  <div class="tabs__panel">
+                    <div class="tabs__items">Паркет</div>
+                  </div>
+                </div>
+
+                <div class="catalog__pagination pagination">
+                  <div class="pagination__left">
+                    <a href="#" class="pagination__back"> Назад</a>
+
+                    <ul class="pagination__list list-reset">
+                      <li class="pagination__item">
+                        <a
+                          href="#"
+                          class="pagination__link pagination__link--active"
+                          >1</a
+                        >
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">2</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
+                      </li>
+                      <li class="pagination__item">
+                        <span>...</span>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">12</a>
+                      </li>
+                    </ul>
+
+                    <a href="#" class="pagination__next">Далее</a>
+                  </div>
+                  <div class="pagination__show">
+                    <span class="pagination__show-title">Показывать по:</span>
+                    <ul class="pagination__show-list list-reset">
+                      <li class="pagination__show-item">
+                        <a
+                          href="#"
+                          class="pagination__show-link pagination__show-link--active"
+                          >9</a
+                        >
+                      </li>
+                      <li class="pagination__show-item">
+                        <a href="#" class="pagination__show-link">12</a>
+                      </li>
+                      <li class="pagination__show-item">
+                        <a href="#" class="pagination__show-link">18</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>
