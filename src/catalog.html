@@ -34,11 +34,32 @@
           <section class="catalog">
             <div class="catalog__inner">
               <div class="catalog__filter">
-                <div class="titles">
+                <div class="titles" data-da=".catalog__tabs,1200,0">
                   <h2 class="title">Двери</h2>
                 </div>
                 <div class="filter">
-                  <div class="filter__items">
+                  <div class="filter__show">
+                    <div class="filter__show-menu">
+                      <div class="filter__show-top">
+                        <div class="filter__show-title">Фильтры</div>
+                        <button class="btn-reset filter__show-btn">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#close"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="filter__show-bottom">
+                        <button class="btn btn-reset btn-primary">
+                          Показать <span>42</span> товара
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="filter__items"
+                    data-da=".filter__show-menu,1200,1"
+                  >
                     <div class="filter__item">
                       <h4 class="filter__title filter__title-price">
                         Стоимость
@@ -259,27 +280,38 @@
                     </div>
                   </div>
 
-                  <button class="btn btn-reset btn-secondary filter__btn">
+                  <button
+                    class="btn btn-reset btn-secondary filter__btn"
+                    data-da=".filter__items,1200,last"
+                  >
                     Сбросить
                   </button>
                 </div>
               </div>
-              <div class="catalog__tabs tabs" data-tabs="new-products">
+              <div class="catalog__tabs tabs" data-tabs="catalog">
                 <div class="tabs__inner">
                   <ul class="tabs__nav">
-                    <li class="tabs__nav-item">
-                      <button class="tabs__nav-btn btn btn-reset" type="button">
-                        Двери <span>(210)</span>
-                      </button>
-                    </li>
-                    <li class="tabs__nav-item">
-                      <button class="tabs__nav-btn btn btn-reset" type="button">
-                        Паркет <span>(68)</span>
-                      </button>
-                    </li>
+                    <div class="tabs__nav-main">
+                      <li class="tabs__nav-item">
+                        <button
+                          class="active-btn tabs__nav-btn tabs__btn btn btn-reset"
+                          type="button"
+                        >
+                          Двери <span>(210)</span>
+                        </button>
+                      </li>
+                      <li class="tabs__nav-item">
+                        <button
+                          class="active-btn tabs__nav-btn tabs__btn btn btn-reset"
+                          type="button"
+                        >
+                          Паркет <span>(68)</span>
+                        </button>
+                      </li>
+                    </div>
                     <li class="tabs__nav-item">
                       <button
-                        class="tabs__nav-btn tabs__nav-btn-filter btn btn-reset"
+                        class="active-btn tabs__nav-btn-filter btn btn-reset"
                         type="button"
                       >
                         Фильтры

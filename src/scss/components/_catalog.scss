@@ -42,9 +42,6 @@
     line-height: 1.328vw;
   }
 
-  &__pagination {
-  }
-
   &__tabs {
     flex: 1 1 auto;
   }
@@ -68,17 +65,23 @@
       padding: 0;
     }
 
+    &__nav-main {
+      display: flex;
+      margin-right: 1.063vw;
+    }
+
     &__nav-item {
       &:not(:last-child) {
         margin-right: 1.063vw;
       }
     }
 
-    &__nav-btn {
+    &__btn {
       background-color: var(--light);
       color: var(--main-black);
       border: 0.052vw solid var(--main-black);
       padding: 0.521vw 1.683vw;
+      width: 10.156vw;
       color: var(--main-black);
       font-weight: 400;
       font-size: 1.042vw;
@@ -86,7 +89,7 @@
       span {
         font-weight: 400;
         font-size: 0.833vw;
-        line-height: 1.1em;
+        line-height: 1.1;
         color: rgb(176, 171, 171);
         margin-left: 0.26vw;
         pointer-events: none;
@@ -98,19 +101,21 @@
       align-items: center;
       justify-content: center;
       width: 17.865vw;
-      height: 2.24vw;
-      font-weight: 400;
-      font-size: 1.042vw;
-      line-height: 1.1;
       background-color: var(--light);
       color: var(--main-black);
       border: 0.052vw solid var(--main-black);
+      padding: 0.521vw 1.683vw;
+      color: var(--main-black);
+      font-weight: 400;
+      font-size: 1.042vw;
+      line-height: 1.1;
       svg {
         fill: var(--main-black);
         width: 1.042vw;
         height: 1.042vw;
         margin-left: 0.885vw;
         pointer-events: none;
+        transition: all 0.3s ease-in-out;
       }
     }
 
@@ -134,7 +139,6 @@
 
   //product
   .product {
-    width: 15.469vw;
     padding: 1.094vw 1.146vw 0.3vw;
 
     &__img {
@@ -144,16 +148,46 @@
       }
     }
 
+    &_term {
+      font-size: 0.71vw;
+      line-height: 1.042vw;
+    }
+
+    &__title {
+      font-size: 0.833vw;
+      line-height: 1.146vw;
+    }
+
+    &__color {
+      span {
+        font-size: 0.729vw;
+      }
+    }
+
     &__body-color {
       label {
         padding-left: 1.5vw;
       }
+    }
+
+    .price__old {
+      font-size: 0.729vw;
+      line-height: 1.042vw;
+    }
+
+    .price__new {
+      font-size: 0.833vw;
+      line-height: 1.042vw;
     }
   }
 }
 
 //filter
 .filter {
+  &__show {
+    display: none;
+  }
+
   &__items {
     margin-bottom: 2.604vw;
   }

@@ -6,3 +6,4 @@ import "./components/dynamic_adapt";
 import "./components/smooth-scroll";
 import "./components/range-slider";
 import "./components/accordion";
+import "./components/filter-menu";
