@@ -60,7 +60,7 @@
     &__nav-btn--active {
       background-color: var(--main-green-dark);
       color: var(--light);
-      border: 1px solid transparent;
+      border: 0.052vw solid transparent;
     }
 
     &__items {
@@ -136,8 +136,8 @@
   }
 
   .filter__accordion-body-color .color {
-    width: 15.2px;
-    height: 15.2px;
+    width: 0.792vw;
+    height: 0.792vw;
   }
 
   //color-1

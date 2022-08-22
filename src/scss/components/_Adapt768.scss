@@ -1,251 +1,208 @@
-@include tablet {
+@include mobile {
   .catalog {
-    padding: 2.703vw 0 13.997vw;
+    padding: 20.759px 0 30.497px;
 
     .titles {
-      margin-bottom: 2.491vw;
-    }
-
-    &__sort {
-      display: none;
-    }
-
-    &__filter {
-      opacity: 0;
-      visibility: hidden;
-      margin-right: 0;
-      transition: all 0.3s ease-in-out;
+      margin-bottom: 15.131px;
     }
 
     //tabs
     .tabs {
       &__panel {
-        padding: 0 0 3.906vw;
+        padding: 0 0 40.998px;
         width: auto;
       }
 
       &__nav {
-        justify-content: center;
-        margin-top: 0;
-        margin-bottom: 5.208vw;
-        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
       }
 
       &__nav-main {
-        margin-right: 2.604vw;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4vw;
       }
 
       &__nav-item {
+        width: 100%;
         &:not(:last-child) {
-          margin-right: 2.052vw;
+          margin-right: 4vw;
         }
       }
 
       &__btn {
-        width: 21.563vw;
-        height: 5.599vw;
-        font-size: 2.605vw;
-        line-height: 2.995vw;
+        width: 100%;
+        height: 10.667vw;
+        font-size: 5.335vw;
+        line-height: 6.134vw;
+        border-radius: 16.267vw;
         span {
           font-weight: 400;
-          font-size: 1.953vw;
-          margin-left: 1vw;
+          font-size: 4vw;
+          margin-left: 2.048vw;
         }
       }
 
       &__nav-btn-filter {
-        display: flex;
-        width: 44.813vw;
-        height: 5.599vw;
-        font-size: 2.605vw;
-        line-height: 2.995vw;
+        width: 100%;
+        height: 11.467vw;
+        font-size: 5.335vw;
+        line-height: 6.134vw;
+        border-radius: 16.267vw;
 
         svg {
-          width: 2.67vw;
-          height: 2.67vw;
-          margin-left: 2.294vw;
+          width: 5.468vw;
+          height: 5.468vw;
+          margin-left: 4.698vw;
         }
       }
 
       &__items {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 2.604vw;
-        grid-row-gap: 2.604vw;
+        grid-column-gap: 19.999px;
+        grid-row-gap: 19.999px;
       }
     }
 
     //product
     .product {
-      padding: 2.491vw 2.702vw 4.635vw;
+      border-radius: 4vw;
+      padding: 4.035vw 6.867vw 4.159vw;
 
       &__img {
         img {
-          width: 20.508vw;
-          height: 39.161vw;
+          width: 42vw;
+          height: 80.202vw;
         }
       }
 
       &_term {
-        font-size: 1.823vw;
-        line-height: 2.8vw;
+        font-size: 3.734vw;
+        line-height: 5.734vw;
+        margin-bottom: 5.867vw;
       }
 
       &__title {
-        font-size: 2.344vw;
-        line-height: 3.255vw;
+        font-size: 4.267vw;
+        line-height: 6.666vw;
       }
 
       &__color {
         span {
-          font-size: 2.083vw;
+          font-size: 3.733vw;
+          line-height: 5.6vw;
         }
       }
 
       &__body-color {
         label {
-          padding-left: 2.995vw;
+          padding-left: 6.134vw;
         }
       }
 
       .price__old {
-        font-size: 2.181vw;
-        line-height: 2.8vw;
+        font-size: 4.467vw;
+        line-height: 5.734vw;
       }
 
       .price__new {
-        font-size: 2.604vw;
-        line-height: 2.8vw;
+        font-size: 5.333vw;
+        line-height: 5.734vw;
+      }
+
+      .filter__accordion-body-color .color {
+        width: 3.792vw;
+        height: 3.792vw;
       }
     }
   }
 
   //filter
   .filter {
-    &__show {
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      z-index: 3;
-    }
-
     &__show-menu {
-      position: relative;
-      width: 48.177vw;
-      height: 100%;
-      background-color: var(--light);
-      transform: translateX(-100%);
-      transition: all 0.3s ease-in-out;
+      width: 100%;
     }
 
     &__show-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2.865vw 2.685vw;
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        border-bottom: 0.261vw solid var(--border-color);
-      }
       svg {
-        width: 2.734vw;
-        height: 2.734vw;
+        width: 5.599vw;
+        height: 5.599vw;
       }
     }
 
     &__show-title {
-      font-family: var(--font-family-HelveticaNeue);
-      font-weight: 700;
-      font-size: 3.125vw;
-      line-height: 3.125vw;
+      font-size: 6.4vw;
+      line-height: 6.4vw;
     }
 
     &__show-bottom {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      padding: 3.906vw;
-      background-color: #f7f7f7;
+      padding: 29.998px;
       button {
         width: 100%;
         text-align: center;
-        padding: 2.083vw 6.641vw;
-        font-weight: 500;
-        font-size: 2.083vw;
-        line-height: 2.344vw;
+        border-radius: 16.267vw;
+        padding: 4.266vw 18.934vw;
+        font-size: 4.266vw;
+        line-height: 4.801vw;
+        border-radius: 16.267vw;
       }
     }
 
     &__items {
-      padding: 3.906vw 2.865vw 28.069vw;
-      height: 100%;
-      overflow-y: auto;
-      margin-bottom: 0;
+      padding: 29.998px 22.003px 215.57px;
     }
 
     &__item {
       &:not(:last-child) {
-        margin-bottom: 2.906vw;
+        margin-bottom: 8.085vw;
       }
 
       &:first-child {
-        margin-bottom: 7vw;
+        margin-bottom: 12.336vw;
       }
     }
 
     &__title {
-      font-size: 2.409vw;
-      line-height: 2.653vw;
+      font-size: 4.934vw;
+      line-height: 5.433vw;
     }
 
     &__title-price {
-      margin-bottom: 3.255vw;
+      margin-bottom: 6.666vw;
     }
 
     &__btn {
-      padding: 2.083vw 9.245vw;
-      font-size: 2.083vw;
-      line-height: 2.344vw;
+      border-radius: 16.267vw;
+      padding: 4.266vw 18.934vw;
+      font-size: 4.266vw;
+      line-height: 4.801vw;
     }
-  }
-
-  //filter active
-  .filter--active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .filter-menu--active {
-    transform: translateX(0);
   }
 
   //filter-price
   .filter-price {
     &__wrapper {
-      margin-bottom: 3.972vw;
+      margin-bottom: 8.135vw;
       &::after {
-        width: 1.986vw;
-        height: 0.13vw;
+        display: none;
       }
     }
 
     &__input {
-      width: 17.481vw;
-      height: 5.631vw;
-      padding: 0.57vw 1.628vw 0.406vw 1.628vw;
-      font-size: 2.083vw;
-      line-height: 3.336vw;
+      width: 100%;
+      height: 11.532vw;
+      padding: 1.167vw 3.334vw 0.831vw 3.334vw;
+      font-size: 4.266vw;
+      line-height: 6.832vw;
+      border-radius: 13.333vw;
+      &:not(:last-child) {
+        margin-right: 4vw;
+      }
     }
   }
 
@@ -255,8 +212,8 @@
   }
 
   .noUi-horizontal {
-    top: -0.244vw;
-    height: 0.391vw;
+    top: -0.5vw;
+    height: 0.801vw;
   }
 
   .noUi-connects {
@@ -264,119 +221,95 @@
   }
 
   .noUi-horizontal .noUi-handle {
-    top: -10px;
-    width: 0.325vw;
-    height: 1.466vw;
-  }
-
-  .noUi-handle {
-    right: 0;
-    border: none;
-    box-shadow: none;
-    cursor: pointer;
+    top: -3.202vw;
+    width: 0.666vw;
+    height: 3.002vw;
   }
 
   .noUi-horizontal .noUi-handle {
-    width: 3.06vw;
-    height: 3.06vw;
-    right: -2.637vw;
+    width: 6.267vw;
+    height: 6.267vw;
+    right: -5.401vw;
   }
 
   //filter-accordion
   .filter__accordion {
     &-header {
-      margin-bottom: 2.865vw;
+      margin-bottom: 5.867vw;
     }
 
     &-icon {
-      width: 3.321vw;
-      height: 3.321vw;
+      width: 6.801vw;
+      height: 6.801vw;
     }
 
     &-body-color {
-      flex-direction: row;
-      flex-wrap: wrap;
       label {
-        margin-bottom: 2.22vw;
-        padding-bottom: 2.22vw;
+        margin-bottom: 4.547vw;
       }
     }
   }
 
   //custom-radio for categories select
   .filter__accordion-body label {
-    padding-bottom: 3.955vw;
-    padding-left: 4.64vw;
-    font-size: 2.083vw;
-    line-height: 3.255vw;
+    font-size: 4.267vw;
+    padding-left: 9.083vw;
+    padding-top: 1.333vw;
   }
 
   .filter__accordion-body-color label {
-    padding-left: 5.036vw;
-    font-size: 2.083vw;
-    line-height: 3.325vw;
+    padding-left: 10.083vw;
+    margin-bottom: 10vw;
   }
 
   .filter__accordion-body span,
   .filter__accordion-body-color span {
-    height: 2.834vw;
-    width: 2.834vw;
+    height: 6.604vw;
+    width: 6.604vw;
   }
 
   .filter__accordion-body label span:after,
   .filter__accordion-body-color label span:after {
-    width: 1.986vw;
-    height: 1.986vw;
+    width: 3.701vw;
+    height: 3.701vw;
+  }
+
+  .filter__accordion-body label input:checked ~ span,
+  .filter__accordion-body-color label input:checked ~ span {
+    border: 0.604vw solid var(--main-green-dark);
   }
 
   //pagination
   .pagination {
-    justify-content: center;
-    padding-top: 8.464vw;
+    padding-top: 8.001vw;
 
     &__back,
     &__next {
-      font-size: 2.083vw;
-      line-height: 2.344vw;
+      font-size: 5.066vw;
+      line-height: 6.134vw;
     }
 
     &__back {
-      padding-left: 2.614vw;
-      margin-right: 6.917vw;
+      padding-left: 5.354vw;
+      margin-right: 5.366vw;
       &::before {
-        top: 0.521vw;
-        width: 1.335vw;
-        height: 1.335vw;
+        top: 1.334vw;
+        width: 2.734vw;
+        height: 2.734vw;
       }
     }
 
     &__next {
-      padding-right: 2.614vw;
-      margin-left: 6.917vw;
+      padding-right: 5.354vw;
+      margin-left: 5.366vw;
       &::after {
-        top: 0.521vw;
-        width: 1.335vw;
-        height: 1.335vw;
+        top: 1.334vw;
+        width: 2.734vw;
+        height: 2.734vw;
       }
     }
 
-    &__item {
-      &:not(:last-child) {
-        margin-right: 3.906vw;
-      }
-    }
-
-    &__link {
-      font-size: 2.083vw;
-      line-height: 2.458vw;
-    }
-
-    &__link--active {
-      width: 3.906vw;
-      height: 3.906vw;
-    }
-
-    &__show {
+    &__list {
       display: none;
     }
   }
