@@ -559,7 +559,7 @@ a {
   .mob-menu {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: auto;
     position: fixed;
     top: 0;
@@ -590,7 +590,7 @@ a {
   }
   .mob-menu__nav {
     width: 64.453vw;
-    height: 100vh;
+    height: 100%;
     background-color: var(--light);
     overflow: auto;
     padding-bottom: 2vw;
@@ -2552,7 +2552,7 @@ a {
     height: 3.681vw;
   }
   .new-products .filter__accordion-body-color label {
-    padding-right: 4vw;
+    padding-left: 6vw;
   }
   .product {
     padding: 4vw 6.667vw;
@@ -4572,7 +4572,7 @@ a {
   .filter__accordion-body label {
     font-size: 4.267vw;
     padding-left: 9.083vw;
-    padding-top: 1.333vw;
+    padding-top: 2.333vw;
   }
   .filter__accordion-body-color label {
     padding-left: 10.083vw;
@@ -4832,7 +4832,7 @@ a {
     margin-bottom: 10.667vw;
   }
   .footer__call span {
-    font-size: 10vw;
+    font-size: 9vw;
     line-height: 12.333vw;
     margin-bottom: 6.834vw;
   }
