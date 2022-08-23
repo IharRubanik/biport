@@ -1044,23 +1044,23 @@
 
 @include mobile {
   .catalog {
-    padding: 20.759px 0 30.497px;
+    padding: 5.536vw 0 8.133vw;
 
     .titles {
-      margin-bottom: 15.131px;
+      margin-bottom: 4.035vw;
     }
 
     //tabs
     .tabs {
       &__panel {
-        padding: 0 0 40.998px;
+        padding: 0 0 10.933vw;
         width: auto;
       }
 
       &__nav {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 5.333vw;
       }
 
       &__nav-main {
@@ -1108,8 +1108,8 @@
       &__items {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 19.999px;
-        grid-row-gap: 19.999px;
+        grid-column-gap: 5.333vw;
+        grid-row-gap: 5.333vw;
       }
     }
 
@@ -1173,6 +1173,7 @@
     }
 
     &__show-top {
+      padding: 5.865vw 4vw;
       svg {
         width: 5.599vw;
         height: 5.599vw;
@@ -1185,7 +1186,7 @@
     }
 
     &__show-bottom {
-      padding: 29.998px;
+      padding: 7.999vw;
       button {
         width: 100%;
         text-align: center;
@@ -1198,7 +1199,7 @@
     }
 
     &__items {
-      padding: 29.998px 22.003px 215.57px;
+      padding: 7.999vw 5.867vw 50.485vw;
     }
 
     &__item {
@@ -1298,7 +1299,7 @@
   .filter__accordion-body label {
     font-size: 4.267vw;
     padding-left: 9.083vw;
-    padding-top: 1.333vw;
+    padding-top: 2.333vw;
   }
 
   .filter__accordion-body-color label {
