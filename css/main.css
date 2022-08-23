@@ -1527,18 +1527,18 @@ a {
   .hero__btn-next {
     height: 10vw;
     top: 18%;
-    right: 2.667vw;
+    right: 3.5vw;
   }
   .hero__btn-next::after {
-    font-size: 5.525vw;
+    font-size: 8vw;
   }
   .hero__btn-prev {
     height: 10vw;
     top: 18%;
-    left: 2.667vw;
+    left: 3.5vw;
   }
   .hero__btn-prev::after {
-    font-size: 5.333vw;
+    font-size: 8vw;
   }
   .hero .swiper-pagination {
     margin-top: 0;
@@ -1847,8 +1847,6 @@ a {
     row-gap: 0;
   }
   .benefits__item {
-    max-width: 100%;
-    width: 100%;
     padding-bottom: 2.667vw;
   }
   .benefits__num {
@@ -4373,13 +4371,13 @@ a {
 }
 @media only screen and (max-width: 600px) {
   .catalog {
-    padding: 20.759px 0 30.497px;
+    padding: 5.536vw 0 8.133vw;
   }
   .catalog .titles {
-    margin-bottom: 15.131px;
+    margin-bottom: 4.035vw;
   }
   .catalog .tabs__panel {
-    padding: 0 0 40.998px;
+    padding: 0 0 10.933vw;
     width: auto;
   }
   .catalog .tabs__nav {
@@ -4390,7 +4388,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5.333vw;
   }
   .catalog .tabs__nav-main {
     display: -webkit-box;
@@ -4438,8 +4436,8 @@ a {
     grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (1fr)[3];
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 19.999px;
-    grid-row-gap: 19.999px;
+    grid-column-gap: 5.333vw;
+    grid-row-gap: 5.333vw;
   }
   .catalog .product {
     border-radius: 4vw;
@@ -4480,6 +4478,9 @@ a {
   .filter__show-menu {
     width: 100%;
   }
+  .filter__show-top {
+    padding: 5.865vw 4vw;
+  }
   .filter__show-top svg {
     width: 5.599vw;
     height: 5.599vw;
@@ -4489,7 +4490,7 @@ a {
     line-height: 6.4vw;
   }
   .filter__show-bottom {
-    padding: 29.998px;
+    padding: 7.999vw;
   }
   .filter__show-bottom button {
     width: 100%;
@@ -4501,7 +4502,7 @@ a {
     border-radius: 16.267vw;
   }
   .filter__items {
-    padding: 29.998px 22.003px 215.57px;
+    padding: 7.999vw 5.867vw 50.485vw;
   }
   .filter__item:not(:last-child) {
     margin-bottom: 5.085vw;
