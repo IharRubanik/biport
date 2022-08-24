@@ -55,10 +55,12 @@
     transform: translateX(4.3vw);
     transition: all 0.2s ease-in-out;
 
-    &:hover {
-      background-color: var(--main-green-dark);
-      color: var(--light);
-      border: none;
+    @include for-desktop {
+      &:hover {
+        background-color: var(--main-green-dark);
+        color: var(--light);
+        border: none;
+      }
     }
   }
 

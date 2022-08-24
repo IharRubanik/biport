@@ -12,9 +12,11 @@
     border: 0.052vw solid var(--main-black);
     color: var(--main-black);
     background-color: var(--light);
-    &:hover {
-      background-color: var(--main-black);
-      color: var(--light);
+    @include for-desktop {
+      &:hover {
+        background-color: var(--main-black);
+        color: var(--light);
+      }
     }
   }
 
@@ -32,7 +34,6 @@
     }
 
     &__nav-item {
-      background: none;
       &:not(:last-child) {
         margin-right: 1.063vw;
       }
@@ -43,6 +44,7 @@
       color: var(--main-black);
       border: 0.052vw solid var(--main-black);
       padding: 0.521vw 1.683vw;
+      width: 10.156vw;
       color: var(--main-black);
       font-weight: 400;
       font-size: 1.042vw;
@@ -50,7 +52,7 @@
       span {
         font-weight: 400;
         font-size: 0.833vw;
-        line-height: 1.1em;
+        line-height: 1.1;
         color: rgb(176, 171, 171);
         margin-left: 0.26vw;
         pointer-events: none;
@@ -60,7 +62,10 @@
     &__nav-btn--active {
       background-color: var(--main-green-dark);
       color: var(--light);
-      border: 0.052vw solid transparent;
+      border: 0.13vw solid transparent;
+      svg {
+        fill: var(--light);
+      }
     }
 
     &__items {
@@ -191,18 +196,19 @@
 
       &__nav-item {
         &:not(:last-child) {
-          margin-right: 1.063vw;
+          margin-right: 2.052vw;
         }
       }
 
-      &__nav-btn {
-        padding: 1.302vw 3.906vw;
-        font-size: 2.604vw;
+      &__btn {
+        width: 21.563vw;
+        height: 5.599vw;
+        font-size: 2.605vw;
         line-height: 2.995vw;
-
         span {
-          font-size: 2.604vw;
-          line-height: 2.995vw;
+          font-weight: 400;
+          font-size: 1.953vw;
+          margin-left: 1vw;
         }
       }
 
@@ -304,21 +310,27 @@
         margin-top: 0;
       }
 
+      &__nav {
+        margin-bottom: 5.333vw;
+      }
+
       &__nav-item {
+        width: 100%;
         &:not(:last-child) {
-          margin-right: 0;
+          margin-right: 4vw;
         }
       }
 
-      &__nav-btn {
-        padding: 2.267vw 6.333vw;
-        font-size: 5.333vw;
-        line-height: 6.133vw;
+      &__btn {
+        width: 100%;
+        height: 10.667vw;
+        font-size: 5.335vw;
+        line-height: 6.134vw;
         border-radius: 16.267vw;
-
         span {
-          font-size: 4.533vw;
-          line-height: 5.6vw;
+          font-weight: 400;
+          font-size: 4vw;
+          margin-left: 2.048vw;
         }
       }
 
