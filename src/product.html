@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', { "title": "Дверь" })
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html') @include('partials/mob-menu.html')
+      @include('partials/modal.html') @include('partials/modal.html')
+      @include('partials/action.html')
+      <main class="main">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list list-reset">
+              <li class="breadcrumbs__item-back">
+                <a
+                  href="index.html"
+                  class="breadcrumbs__link breadcrumbs__link-back"
+                >
+                  Назад</a
+                >
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item-main">
+                <a href="index.html" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item-main">
+                <a href="contacts.html" class="breadcrumbs__link">Каталог</a>
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item-main">
+                <a
+                  href="contacts.html"
+                  class="breadcrumbs__link breadcrumbs__link--active"
+                  >Dark Side LB - 182 Steel, Red vine, Earl Gray - Sunrise
+                </a>
+              </li>
+            </ul>
+          </div>
+          <section class="door">
+            <div class="door__inner">
+              <div class="door__thumb">
+                <div class="swiper door__swiper">
+                  <div class="swiper-wrapper door__swiper-wrapper">
+                    <div class="swiper-slide door__swiper-slide">
+                      <picture>
+                        <source srcset="img/product2.avif" type="image/avif" />
+                        <source srcset="img/product2.webp" type="image/webp" />
+                        <img
+                          loading="lazy"
+                          src="img/product2.png"
+                          class="image"
+                          width="321"
+                          height="691"
+                          alt="Door slide"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="swiper-slide door__swiper-slide">
+                      <picture>
+                        <source
+                          srcset="img/mini-product1.avif"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="img/mini-product1.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/mini-product1.png"
+                          class="image"
+                          width="321"
+                          height="691"
+                          alt="Door slide"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="swiper-slide door__swiper-slide">
+                      <picture>
+                        <source
+                          srcset="img/mini-product2.avif"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="img/mini-product2.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/mini-product2.png"
+                          class="image"
+                          width="321"
+                          height="691"
+                          alt="Door slide"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper door__swiper-mini">
+                  <div class="swiper-wrapper door__swiper-wrapper-mini">
+                    <div class="swiper-slide door__swiper-slide-mini">
+                      <picture>
+                        <source srcset="img/product2.avif" type="image/avif" />
+                        <source srcset="img/product2.webp" type="image/webp" />
+                        <img
+                          loading="lazy"
+                          src="img/product2.png"
+                          class="image"
+                          width="321"
+                          height="691"
+                          alt="Door slide"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="swiper-slide door__swiper-slide-mini">
+                      <picture>
+                        <source
+                          srcset="img/mini-product1.avif"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="img/mini-product1.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/mini-product1.png"
+                          class="image"
+                          width="321"
+                          height="691"
+                          alt="Door slide"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="swiper-slide door__swiper-slide-mini">
+                      <picture>
+                        <source
+                          srcset="img/mini-product2.avif"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="img/mini-product2.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          loading="lazy"
+                          src="img/mini-product2.png"
+                          class="image"
+                          width="321"
+                          height="691"
+                          alt="Door slide"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar door__scrollbar"></div>
+                </div>
+              </div>
+              <div class="door__body">
+                <span class="door__term">#09425</span>
+                <h3 class="door__title">
+                  Dark Side LB - 182 Steel, Red vine, Earl Gray - Sunrise
+                </h3>
+                <p class="door__descr">
+                  Новинка, выполненная в духе минимализма. Обработка
+                  натурального шпона дуба методом браширования позволяет
+                  получить поверхности с ярко выраженной структурой
+                </p>
+                <div class="door__price">
+                  <div class="door__price-old">$ <span>215</span></div>
+                  <div class="door__price-new">
+                    $
+                    <span>431.00</span>
+                  </div>
+                </div>
+                <div class="door__size size">
+                  <h5 class="size__title">Размер</h5>
+                  <ul class="size__nav list-reset" data-size>
+                    <li class="size__nav-item">
+                      <button
+                        class="size__btn size__btn-active btn btn-reset"
+                        type="button"
+                      >
+                        2м х 60см
+                      </button>
+                    </li>
+
+                    <li class="size__nav-item">
+                      <button
+                        class="size__btn size__btn-active btn btn-reset"
+                        type="button"
+                      >
+                        2м х 70см
+                      </button>
+                    </li>
+
+                    <li class="size__nav-item">
+                      <button
+                        class="size__btn size__btn-active btn btn-reset"
+                        type="button"
+                      >
+                        2м х 80см
+                      </button>
+                    </li>
+
+                    <li class="size__nav-item">
+                      <button
+                        class="size__btn size__btn-active btn btn-reset"
+                        type="button"
+                      >
+                        2м х 90см
+                      </button>
+                    </li>
+
+                    <li class="size__nav-item">
+                      <button
+                        class="size__btn size__btn-active btn btn-reset"
+                        type="button"
+                      >
+                        2м х 90см
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="door__color">
+                  <h5 class="door__color-title">Цвет: <span>Mahadony</span></h5>
+                  <div class="door__color-items">
+                    <label>
+                      <input type="radio" name="color" />
+                      <span class="color-1"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="color" />
+                      <span class="color-2"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="color" />
+                      <span class="color-3"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="color" />
+                      <span class="color-4"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="color" />
+                      <span class="color-5"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="color" />
+                      <span class="color-6"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="color" />
+                      <span class="color-7"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="door__order order">
+                  <div class="order__count">
+                    <button class="order__btn-count btn-reset" data-minus>
+                      <span>-</span>
+                    </button>
+                    <span class="order__count-num">1</span>
+                    <button class="order__btn-count btn-reset" data-plus>
+                      <span>+</span>
+                    </button>
+                  </div>
+                  <button class="btn btn-reset order__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+
+                    Оформить заявку
+                  </button>
+                </div>
+                <div class="order__descr">
+                  <div class="filter__item filter__accordion">
+                    <div class="filter__accordion-item">
+                      <div class="filter__accordion-header">
+                        <h4 class="filter__title">Характеристики</h4>
+                        <svg class="filter__accordion-icon">
+                          <use xlink:href="img/sprite.svg#faq"></use>
+                        </svg>
+                      </div>
+                      <div class="filter__accordion-body">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="filter__door-type">Коллекция:</td>
+                              <td class="filter__door-descr">Классика</td>
+                            </tr>
+                            <tr>
+                              <td class="filter__door-type">Материал:</td>
+                              <td class="filter__door-descr">Экошпон</td>
+                            </tr>
+                            <tr>
+                              <td class="filter__door-type">Тип двери:</td>
+                              <td class="filter__door-descr">Мекшкомнатная</td>
+                            </tr>
+                            <tr>
+                              <td class="filter__door-type">Багет:</td>
+                              <td class="filter__door-descr">Багет</td>
+                            </tr>
+                            <tr>
+                              <td class="filter__door-type">
+                                Направление шпона:
+                              </td>
+                              <td class="filter__door-descr">Горизонтальное</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter__item filter__accordion">
+                    <div class="filter__accordion-item">
+                      <div class="filter__accordion-header">
+                        <h4 class="filter__title">Описание</h4>
+                        <svg class="filter__accordion-icon">
+                          <use xlink:href="img/sprite.svg#faq"></use>
+                        </svg>
+                      </div>
+                      <div class="filter__accordion-body">
+                        <p>
+                          Финишная отделка поверхностей производится
+                          полиуретановой эмалью.Возможна окраска в любой цвет по
+                          RAL при заказе от 5 полотен. Отделка патинированием в
+                          двух цветовых решениях: золото либо серебро (в
+                          качестве дополнительной опции по желанию заказчика).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="door__recent">
+              <div class="swiper recent__swiper">
+                <div class="recent__swiper-top">
+                  <div class="titles">
+                    <h5 class="subtitle">#Лучшее</h5>
+                    <h2 class="title">Недавно смотрели</h2>
+                  </div>
+                  <div class="swiper__btns" data-da=".recent__swiper,600,last">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+                <div class="swiper-wrapper recent__swiper-wrapper">
+                  <div class="swiper-slide recent__swiper-slide">
+                    <a href="#" class="tabs__item product">
+                      <span class="product__term">#624553</span>
+                      <div class="product__img">
+                        <picture>
+                          <source
+                            srcset="img/product1.avif"
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="img/product1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/product1.png"
+                            class="image"
+                            width="190"
+                            height="367"
+                            alt="Product"
+                          />
+                        </picture>
+                      </div>
+                      <h3 class="product__title">
+                        Dark Side LB - 182 Steel quartet
+                      </h3>
+                      <div class="product__bottom">
+                        <div class="product__color">
+                          <span>Maple</span>
+                          <div class="filter__accordion-body-color">
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-1"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-2"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-3"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="product__price price">
+                          <div class="price__old">$ <span>215</span></div>
+                          <div class="price__new">
+                            $
+                            <span>167.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide recent__swiper-slide">
+                    <a href="#" class="tabs__item product">
+                      <span class="product__term">#624553</span>
+                      <div class="product__img">
+                        <picture>
+                          <source
+                            srcset="img/product1.avif"
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="img/product1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/product1.png"
+                            class="image"
+                            width="190"
+                            height="367"
+                            alt="Product"
+                          />
+                        </picture>
+                      </div>
+                      <h3 class="product__title">
+                        Dark Side LB - 182 Steel quartet
+                      </h3>
+                      <div class="product__bottom">
+                        <div class="product__color">
+                          <span>Maple</span>
+                          <div class="filter__accordion-body-color">
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-1"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-2"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-3"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="product__price price">
+                          <div class="price__old">$ <span>215</span></div>
+                          <div class="price__new">
+                            $
+                            <span>167.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide recent__swiper-slide">
+                    <a href="#" class="tabs__item product">
+                      <span class="product__term">#624553</span>
+                      <div class="product__img">
+                        <picture>
+                          <source
+                            srcset="img/product1.avif"
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="img/product1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/product1.png"
+                            class="image"
+                            width="190"
+                            height="367"
+                            alt="Product"
+                          />
+                        </picture>
+                      </div>
+                      <h3 class="product__title">
+                        Dark Side LB - 182 Steel quartet
+                      </h3>
+                      <div class="product__bottom">
+                        <div class="product__color">
+                          <span>Maple</span>
+                          <div class="filter__accordion-body-color">
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-1"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-2"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-3"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="product__price price">
+                          <div class="price__old">$ <span>215</span></div>
+                          <div class="price__new">
+                            $
+                            <span>167.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide recent__swiper-slide">
+                    <a href="#" class="tabs__item product">
+                      <span class="product__term">#624553</span>
+                      <div class="product__img">
+                        <picture>
+                          <source
+                            srcset="img/product1.avif"
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="img/product1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            loading="lazy"
+                            src="img/product1.png"
+                            class="image"
+                            width="190"
+                            height="367"
+                            alt="Product"
+                          />
+                        </picture>
+                      </div>
+                      <h3 class="product__title">
+                        Dark Side LB - 182 Steel quartet
+                      </h3>
+                      <div class="product__bottom">
+                        <div class="product__color">
+                          <span>Maple</span>
+                          <div class="filter__accordion-body-color">
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-1"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-2"></span>
+                            </label>
+                            <label>
+                              <input type="radio" name="type" />
+                              <span class="color color-3"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="product__price price">
+                          <div class="price__old">$ <span>215</span></div>
+                          <div class="price__new">
+                            $
+                            <span>167.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

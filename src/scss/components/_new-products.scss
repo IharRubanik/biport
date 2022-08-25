@@ -137,7 +137,6 @@
     display: block;
     max-height: 100%;
     overflow: hidden;
-    padding-bottom: 1vw;
   }
 
   .filter__accordion-body-color .color {
@@ -225,6 +224,7 @@
     .filter__accordion-body-color .color {
       width: 1.381vw;
       height: 1.381vw;
+      padding-bottom: 1vw;
     }
   }
 
@@ -259,6 +259,10 @@
         line-height: 2.734vw;
         margin-bottom: 0.911vw;
       }
+    }
+
+    .filter__accordion-body-color label {
+      padding-left: 3vw;
     }
   }
 
