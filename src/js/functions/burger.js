@@ -4,12 +4,14 @@ import { enableScroll } from "../functions/enable-scroll";
 (function () {
   const burger = document?.querySelector("[data-burger]");
   const burgerClose = document.querySelector("[data-menu-close]");
+  const mobMenu = document.querySelector(".mob-menu");
   const menu = document?.querySelector("[data-menu]");
   const menuItems = document?.querySelectorAll("[data-menu-item]");
   const overlay = document?.querySelector("[data-menu-overlay]");
 
   burger?.addEventListener("click", (e) => {
     burger?.classList.add("burger--active");
+    mobMenu?.classList.add("mob-menu--show");
     menu?.classList.add("menu--active");
 
     if (menu?.classList.contains("menu--active")) {
@@ -22,6 +24,7 @@ import { enableScroll } from "../functions/enable-scroll";
   });
 
   burgerClose?.addEventListener("click", () => {
+    mobMenu?.classList.remove("mob-menu--show");
     burger?.classList.remove("burger--active");
     menu?.classList.remove("menu--active");
     burger?.classList.remove("burger--menu");

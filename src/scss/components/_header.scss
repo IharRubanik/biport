@@ -102,7 +102,6 @@
   @include burger;
   display: none;
   color: var(--light);
-  width: 4.823vw;
 
   &__line {
     border-radius: 0.333vw;
@@ -119,6 +118,8 @@
   //burger
   .burger {
     display: block;
+    height: 4vw;
+    --burger-line-height: 0.65vw;
   }
 
   //header
@@ -152,8 +153,8 @@
     &__phone {
       svg {
         display: block;
-        width: 3.385vw;
-        height: 3.255vw;
+        width: 4.385vw;
+        height: 4.255vw;
       }
       span {
         display: none;
@@ -188,9 +189,7 @@
 
   //burger
   .burger {
-    @include burger;
-    color: var(--light);
-    width: 8.333vw;
-    height: 5.5vw;
+    height: 4.65vw;
+    --burger-line-height: 0.6vw;
   }
 }

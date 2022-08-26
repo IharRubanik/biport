@@ -15,6 +15,8 @@
     overflow: hidden;
     color: var(--light);
     border-radius: 1.042vw;
+    height: auto;
+
     img {
       height: 12.5vw;
       width: 100%;
@@ -28,7 +30,9 @@
   }
 
   &__text {
-    padding: 1.771vw 1.302vw 3.802vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.771vw 1.302vw 2.802vw;
   }
 
   &__num {
@@ -58,10 +62,6 @@
   //info-swiper
   .swiper {
     overflow: visible;
-  }
-
-  .swiper-slide {
-    min-height: 25.042vw;
   }
 
   .swiper__btns {

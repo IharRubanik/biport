@@ -783,10 +783,15 @@
     }
 
     &__swiper-slide {
+      &:first-child {
+        img {
+          height: 93vw;
+        }
+      }
+
       height: 100%;
       img {
         border-radius: 1.954vw;
-        object-fit: contain;
       }
     }
 
@@ -795,7 +800,7 @@
       padding-right: 0;
       width: 100%;
       height: 46.4vw;
-      padding-bottom: 4vw;
+      padding-bottom: 5vw;
     }
 
     &__swiper-slide-mini {
@@ -807,6 +812,10 @@
     //scrollbar
     .swiper-vertical > .swiper-scrollbar {
       position: static;
+    }
+
+    .swiper-horizontal > .swiper-scrollbar {
+      height: 0.7vw;
     }
 
     &__term {

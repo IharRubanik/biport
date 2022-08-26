@@ -67,7 +67,6 @@ Swiper.use([Navigation, Pagination, Keyboard]);
 const infoSwiper = new Swiper(".info__swiper", {
   spaceBetween: 20,
   loop: false,
-  autoHeight: true,
   centeredSlides: false,
   keyboard: {
     enabled: true,
