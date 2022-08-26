@@ -141,9 +141,7 @@ const servicesSwiper = new Swiper(".services__swiper", {
 //door-swiper
 Swiper.use([Navigation, Pagination, Keyboard, Thumbs, Scrollbar]);
 const doorSwiper = new Swiper(".door__swiper", {
-  slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 20,
 
   speed: 1000,
 
@@ -161,13 +159,16 @@ const doorSwiper = new Swiper(".door__swiper", {
         0: {
           direction: "horizontal",
           slidesPerView: 2,
+          spaceBetween: 20,
         },
         600: {
           direction: "vertical",
           slidesPerView: 3,
+          spaceBetween: 20,
         },
         1200: {
           direction: "horizontal",
+          spaceBetween: 10,
         },
       },
     },
@@ -206,7 +207,7 @@ const recentSwiper = new Swiper(".recent__swiper", {
 
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       slidesPerGroup: 1,
     },
     600: {

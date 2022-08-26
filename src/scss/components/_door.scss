@@ -18,16 +18,13 @@
   }
 
   &__swiper-slide {
-    width: 31.25vw;
-    height: 36.6vw;
-
+    height: 37.7vw;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1.042vw;
     img {
-      width: 16.719vw;
-      height: auto;
+      object-fit: contain;
       border-radius: 1.042vw;
     }
   }
@@ -41,7 +38,7 @@
   }
 
   &__swiper-slide-mini {
-    border: 1px solid transparent;
+    border: 0.052vw solid transparent;
     height: 9vw;
 
     background-color: var(--light);
@@ -68,7 +65,7 @@
   }
 
   .swiper-slide-thumb-active {
-    border: 1px solid var(--main-green-dark);
+    border: 0.052vw solid var(--main-green-dark);
   }
 
   //scrollbars
@@ -516,17 +513,15 @@
 
     &__swiper-slide {
       width: 100%;
-      height: 100%;
       img {
-        width: 32.553vw;
-        height: auto;
+        object-fit: contain;
         border-radius: 1.954vw;
       }
     }
 
     //mini-swiper
     &__swiper-mini {
-      padding-right: 30.72px;
+      padding-right: 4vw;
       margin-bottom: 0;
       margin-right: 0;
       margin-left: 0;
@@ -567,7 +562,7 @@
     }
 
     &__price {
-      margin-bottom: 39.997px;
+      margin-bottom: 5.208vw;
     }
 
     &__price-old {
@@ -639,7 +634,7 @@
 
   .order {
     &__count {
-      margin-right: 54.013px;
+      margin-right: 7.033vw;
     }
 
     &__btn-count {
@@ -764,6 +759,277 @@
 
     .filter__accordion-body-color label {
       padding-left: 5vw;
+    }
+  }
+}
+
+@include mobile {
+  .door {
+    padding: 5.333vw 0 18.667vw;
+    &__inner {
+      margin-bottom: 18.667vw;
+    }
+
+    &__thumb {
+      margin-bottom: 8vw;
+      flex-direction: column;
+    }
+
+    &__swiper {
+      width: 100%;
+      margin-bottom: 4vw;
+      height: 112vw;
+      border-radius: 3.138vw;
+    }
+
+    &__swiper-slide {
+      height: 100%;
+      img {
+        border-radius: 1.954vw;
+        object-fit: contain;
+      }
+    }
+
+    //mini-swiper
+    &__swiper-mini {
+      padding-right: 0;
+      width: 100%;
+      height: 46.4vw;
+      padding-bottom: 4vw;
+    }
+
+    &__swiper-slide-mini {
+      border-radius: 1.954vw;
+      height: 100%;
+      width: 100%;
+    }
+
+    //scrollbar
+    .swiper-vertical > .swiper-scrollbar {
+      position: static;
+    }
+
+    &__term {
+      font-size: 3.733vw;
+      line-height: 5.388vw;
+      margin-bottom: 2.667vw;
+    }
+
+    &__title {
+      font-size: 6.4vw;
+      line-height: 8vw;
+      margin-bottom: 4vw;
+    }
+
+    &__descr {
+      font-size: 3.733vw;
+      line-height: 5.333vw;
+      margin-bottom: 6.667vw;
+    }
+
+    &__price {
+      margin-bottom: 6.667vw;
+    }
+
+    &__price-old {
+      font-size: 6.933vw;
+      line-height: 6.667vw;
+      margin-right: 5.333vw;
+    }
+
+    &__price-new {
+      font-size: 8.533vw;
+      line-height: 9.6vw;
+    }
+
+    &__size {
+      margin-bottom: 6.667vw;
+    }
+
+    &__color {
+      margin-bottom: 10.667vw;
+
+      //custom-radio for categories select
+      .door__color-items label {
+        padding-left: 9.208vw;
+      }
+
+      .door__color-items span {
+        height: 6.133vw;
+        width: 6.133vw;
+      }
+
+      .door__color-items label span:after {
+        width: 4.545vw;
+        height: 4.545vw;
+      }
+    }
+
+    &__color-title {
+      font-size: 5.333vw;
+      line-height: 6.194vw;
+      margin-bottom: 4.049vw;
+      span {
+        font-size: 4.267vw;
+        line-height: 9.067vw;
+        margin-left: 4vw;
+      }
+    }
+
+    &__order {
+      margin-bottom: 10.667vw;
+    }
+  }
+
+  .size {
+    &__title {
+      font-size: 5.333vw;
+      line-height: 6.194vw;
+      margin-bottom: 5.333vw;
+    }
+
+    &__nav {
+      flex-wrap: wrap;
+    }
+
+    &__nav-item {
+      margin-bottom: 4vw;
+      &:not(:last-child) {
+        margin-right: 1.952vw;
+      }
+    }
+
+    &__btn {
+      width: 28vw;
+      padding: 2.767vw 5.367vw;
+      height: 10.667vw;
+      border-radius: 13.333vw;
+      font-size: 3.733vw;
+      line-height: 5.333vw;
+    }
+  }
+
+  .order {
+    flex-direction: column;
+    &__count {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5.333vw;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__btn-count {
+      width: 38.746vw;
+      height: 13.413vw;
+      border-radius: 26.667vw;
+      span {
+        font-size: 8.2vw;
+      }
+    }
+
+    &__count-num {
+      font-size: 7.467vw;
+      line-height: 8.7vw;
+      padding: 0;
+    }
+
+    &__btn {
+      height: 13.333vw;
+      font-size: 4.267vw;
+      line-height: 5.012vw;
+      border-radius: 17.067vw;
+
+      svg {
+        margin-right: 4vw;
+        width: 5.655vw;
+        height: 6.722vw;
+      }
+    }
+
+    &__descr {
+      .filter {
+        &__item {
+          margin: 0;
+          padding-bottom: 5.25vw;
+          padding-top: 5.25vw;
+        }
+
+        &__accordion-header {
+          margin: 0;
+          padding-bottom: 2.5vw;
+          svg {
+            width: 5.333vw;
+            height: 5.333vw;
+          }
+        }
+
+        &__title {
+          font-size: 5.333vw;
+          line-height: 6.274vw;
+        }
+
+        &__accordion-body {
+          p {
+            font-size: 3.733vw;
+            line-height: 5.333vw;
+          }
+        }
+
+        &__door-type {
+          font-size: 4.267vw;
+          line-height: 6.436vw;
+        }
+
+        &__door-descr {
+          font-size: 4.267vw;
+          line-height: 6.4vw;
+        }
+      }
+    }
+  }
+
+  //recent-swiper
+  .door__recent {
+    .recent__swiper {
+      //filter__accordion-body-color
+      .filter__accordion-body-color {
+        padding-bottom: 4vw;
+      }
+
+      .filter__accordion-body-color .color {
+        width: 3.681vw;
+        height: 3.681vw;
+      }
+
+      .filter__accordion-body-color label {
+        padding-left: 6vw;
+      }
+
+      &-top {
+        margin-bottom: 6.51vw;
+      }
+
+      //recent-swiper-navigation
+      .swiper__btns {
+        margin-top: 14.333vw;
+        justify-content: flex-end;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 15.5vw;
+        height: 15.5vw;
+      }
+
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 6.667vw;
+      }
+
+      .swiper-button-prev {
+        margin-right: 4.23vw;
+      }
     }
   }
 }
