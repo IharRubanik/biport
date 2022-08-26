@@ -1499,7 +1499,7 @@ a {
   }
   .hero__btn-next {
     height: 10vw;
-    top: 23%;
+    top: 21%;
     right: 3.5vw;
   }
   .hero__btn-next::after {
@@ -1507,7 +1507,7 @@ a {
   }
   .hero__btn-prev {
     height: 10vw;
-    top: 23%;
+    top: 21%;
     left: 3.5vw;
   }
   .hero__btn-prev::after {
