@@ -480,7 +480,6 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 const infoSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".info__swiper", {
   spaceBetween: 20,
   loop: false,
-  autoHeight: true,
   centeredSlides: false,
   keyboard: {
     enabled: true,

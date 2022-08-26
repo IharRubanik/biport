@@ -368,7 +368,7 @@ a {
   }
   .choices__item--selectable {
     color: var(--light);
-    padding: 0.333vw 0.733vw;
+    padding: 1vw 0.733vw;
   }
   .is-open .choices__inner {
     background-color: var(--main-green-dark);
@@ -380,6 +380,10 @@ a {
   .choices__list--single {
     padding: 0;
     width: 100%;
+  }
+  .choices__list--dropdown,
+.choices__list[aria-expanded] {
+    margin-top: 1vw;
   }
   .choices__list--dropdown .choices__item,
 .choices__list[aria-expanded] .choices__item {
@@ -992,9 +996,9 @@ a {
 }
 
 .burger {
-  --burger-width: 5.208vw;
-  --burger-height: 3.133vw;
-  --burger-line-height: 0.56vw;
+  --burger-width: 6vw;
+  --burger-height: 4.5vw;
+  --burger-line-height: 0.5vw;
   position: relative;
   border: none;
   padding: 0;
@@ -1005,7 +1009,6 @@ a {
   cursor: pointer;
   display: none;
   color: var(--light);
-  width: 4.823vw;
 }
 .burger::before, .burger::after {
   content: "";
@@ -1055,6 +1058,8 @@ a {
 @media only screen and (max-width: 1200px) {
   .burger {
     display: block;
+    height: 4vw;
+    --burger-line-height: 0.65vw;
   }
   .header {
     padding: 1vw 0;
@@ -1078,8 +1083,8 @@ a {
   }
   .call__phone svg {
     display: block;
-    width: 3.385vw;
-    height: 3.255vw;
+    width: 4.385vw;
+    height: 4.255vw;
   }
   .call__phone span {
     display: none;
@@ -1101,55 +1106,8 @@ a {
     height: 7.133vw;
   }
   .burger {
-    --burger-width: 5.208vw;
-    --burger-height: 3.133vw;
-    --burger-line-height: 0.56vw;
-    position: relative;
-    border: none;
-    padding: 0;
-    width: var(--burger-width);
-    height: var(--burger-height);
-    color: #000;
-    background-color: transparent;
-    cursor: pointer;
-    color: var(--light);
-    width: 8.333vw;
-    height: 5.5vw;
-  }
-  .burger::before, .burger::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: var(--burger-line-height);
-    background-color: currentColor;
-    -webkit-transition: top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    transition: top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  }
-  .burger::before {
-    top: 0;
-  }
-  .burger::after {
-    top: calc(100% - var(--burger-line-height));
-  }
-  .burger__line {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: var(--burger-line-height);
-    background-color: currentColor;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    height: 4.65vw;
+    --burger-line-height: 0.6vw;
   }
 }
 .action {
@@ -1871,6 +1829,7 @@ a {
   overflow: hidden;
   color: var(--light);
   border-radius: 1.042vw;
+  height: auto;
 }
 .info__slide img {
   height: 12.5vw;
@@ -1883,7 +1842,14 @@ a {
   background-color: var(--main-green-dark);
 }
 .info__text {
-  padding: 1.771vw 1.302vw 3.802vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1.771vw 1.302vw 2.802vw;
 }
 .info__num {
   position: absolute;
@@ -1908,9 +1874,6 @@ a {
 }
 .info .swiper {
   overflow: visible;
-}
-.info .swiper-slide {
-  min-height: 25.042vw;
 }
 .info .swiper__btns {
   display: -webkit-box;
@@ -2380,6 +2343,9 @@ a {
   max-height: 100%;
   overflow: hidden;
 }
+.product .filter__accordion-body-color label {
+  padding-left: 1.5vw;
+}
 .product .filter__accordion-body-color .color {
   width: 0.792vw;
   height: 0.792vw;
@@ -2450,9 +2416,12 @@ a {
     margin-bottom: 5.208vw;
   }
   .new-products .filter__accordion-body-color .color {
-    width: 1.381vw;
-    height: 1.381vw;
+    width: 1.781vw;
+    height: 1.781vw;
     padding-bottom: 1vw;
+  }
+  .new-products .filter__accordion-body-color label {
+    padding-left: 1.5vw;
   }
   .product {
     padding: 2.604vw;
@@ -5361,16 +5330,17 @@ a {
   .door__swiper-slide {
     height: 100%;
   }
+  .door__swiper-slide:first-child img {
+    height: 93vw;
+  }
   .door__swiper-slide img {
     border-radius: 1.954vw;
-    -o-object-fit: contain;
-    object-fit: contain;
   }
   .door__swiper-mini {
     padding-right: 0;
     width: 100%;
     height: 46.4vw;
-    padding-bottom: 4vw;
+    padding-bottom: 5vw;
   }
   .door__swiper-slide-mini {
     border-radius: 1.954vw;
@@ -5379,6 +5349,9 @@ a {
   }
   .door .swiper-vertical > .swiper-scrollbar {
     position: static;
+  }
+  .door .swiper-horizontal > .swiper-scrollbar {
+    height: 0.7vw;
   }
   .door__term {
     font-size: 3.733vw;
