@@ -800,7 +800,7 @@ a {
     line-height: 6.8vw;
   }
   .mob-menu .feedback__form .form__btn {
-    padding: 4.086vw 13.393vw;
+    padding: 5.335vw 13.393vw;
     font-size: 4.267vw;
     line-height: 4.8vw;
     border-radius: 17.067vw;
@@ -1950,11 +1950,13 @@ a {
     width: 100%;
   }
   .info__text {
-    padding: 4.427vw 4.557vw 9.375vw;
+    padding: 4.427vw 3.557vw 7.375vw;
   }
   .info__num {
     font-size: 9.115vw;
     line-height: 10.417vw;
+    top: 2vw;
+    left: 2vw;
   }
   .info__title {
     font-size: 3.125vw;
@@ -2807,7 +2809,7 @@ a {
     width: 100%;
     font-size: 4.265vw;
     line-height: 4.531vw;
-    padding: 4.335vw 18.453vw;
+    padding: 5.335vw 18.453vw;
     border-radius: 17.067vw;
   }
   .services__right {
@@ -3113,7 +3115,7 @@ a {
   }
   .feedback .form__btn,
 .graph-modal .form__btn {
-    padding: 4.086vw 13.393vw;
+    padding: 5.335vw 13.393vw;
     font-size: 4.267vw;
     line-height: 4.8vw;
     border-radius: 17.067vw;
@@ -4414,7 +4416,7 @@ a {
   }
   .catalog .tabs__btn {
     width: 100%;
-    height: 10.667vw;
+    height: 11.467vw;
     font-size: 5.335vw;
     line-height: 6.134vw;
     border-radius: 16.267vw;
@@ -5469,7 +5471,7 @@ a {
   }
   .order__btn-count {
     width: 38.746vw;
-    height: 13.413vw;
+    height: 13.333vw;
     border-radius: 26.667vw;
   }
   .order__btn-count span {
