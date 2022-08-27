@@ -121,6 +121,7 @@
   .choices__item--selectable {
     color: var(--light);
     padding: 1vw 0.733vw;
+    cursor: none;
   }
 
   .is-open .choices__inner {
@@ -158,6 +159,10 @@
     border-width: 0.7vw;
     top: 1.5vw;
   }
+
+  .choices[data-type*="select-one"] {
+    cursor: none;
+  }
 }
 
 @include mobile {
@@ -173,7 +178,8 @@
   }
 
   .choices__item--selectable {
-    padding: 1.066vw 2.346vw;
+    padding: 1.166vw 2.346vw;
+    cursor: none;
   }
 
   .is-open .choices__item {
@@ -199,5 +205,9 @@
     right: 2.334vw;
     border-width: 2.04vw;
     top: 3.2vw;
+  }
+
+  .choices[data-type*="select-one"] {
+    cursor: none;
   }
 }

@@ -121,12 +121,6 @@ a {
   }
 }
 
-@include mobile {
-  .container {
-    padding: 0 3vw;
-  }
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
