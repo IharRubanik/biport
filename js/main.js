@@ -724,6 +724,7 @@ __webpack_require__.r(__webpack_exports__);
       burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-label", "Открыть меню");
       burger.classList.remove("burger--active");
       menu.classList.remove("menu--active");
+      mobMenu === null || mobMenu === void 0 ? void 0 : mobMenu.classList.remove("mob-menu--show");
       (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     });
   });
