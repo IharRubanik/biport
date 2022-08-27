@@ -210,7 +210,12 @@ a {
   .container {
     max-width: 166.667vw;
     margin: 0 auto;
-    padding: 0 1.953vw;
+    padding: 0 3vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 3vw;
   }
 }
 .js-focus-visible :focus:not(.focus-visible) {
@@ -879,7 +884,7 @@ a {
     content: "";
     position: absolute;
     top: 0.533vw;
-    left: 0;
+    left: 0.5vw;
     width: 2.821vw;
     height: 2.821vw;
     border: 0.104vw solid var(--main-black);
@@ -1081,7 +1086,7 @@ a {
     height: 100%;
   }
   .header__inner {
-    padding: 0vw 2vw;
+    padding: 0vw 3vw;
   }
   .header__call {
     margin-right: 0;
@@ -1189,7 +1194,7 @@ a {
     padding: 1.233vw 0vw;
   }
   .action__title {
-    font-size: 1.6vw;
+    font-size: 1.58vw;
     line-height: 1.1;
     padding: 0vw 3vw;
   }
@@ -1474,7 +1479,7 @@ a {
   }
   .hero__content {
     position: static;
-    padding: 9.333vw 2vw;
+    padding: 9.333vw 3vw;
     max-width: 100%;
   }
   .hero__title {
@@ -1496,7 +1501,7 @@ a {
   .hero__btn-next {
     height: 10vw;
     top: 37vw;
-    right: 3.5vw;
+    right: 4.5vw;
   }
   .hero__btn-next::after {
     font-size: 8vw;
@@ -1504,7 +1509,7 @@ a {
   .hero__btn-prev {
     height: 10vw;
     top: 37vw;
-    left: 3.5vw;
+    left: 4.5vw;
   }
   .hero__btn-prev::after {
     font-size: 8vw;
@@ -1819,6 +1824,9 @@ a {
   .benefits__item {
     padding-bottom: 2.667vw;
   }
+  .benefits__item::after {
+    height: 0.4vw;
+  }
   .benefits__num {
     font-size: 24vw;
     line-height: 28vw;
@@ -2101,7 +2109,7 @@ a {
 
 @media only screen and (max-width: 1200px) {
   .discount {
-    padding: 10.938vw 3.906vw;
+    padding: 10.938vw 3vw;
   }
   .discount__bg {
     width: 100vw;
@@ -2153,7 +2161,7 @@ a {
 }
 @media only screen and (max-width: 600px) {
   .discount {
-    padding: 12.333vw 2.5vw;
+    padding: 12.333vw 3vw;
   }
   .discount__bg {
     width: 100%;
@@ -2707,7 +2715,7 @@ a {
 @media only screen and (max-width: 1200px) {
   .services__info {
     width: 100%;
-    padding: 33.724vw 2vw;
+    padding: 33.724vw 3vw;
   }
   .services .title {
     margin-bottom: 3.906vw;
@@ -2994,7 +3002,7 @@ a {
 @media only screen and (max-width: 1200px) {
   .feedback,
 .graph-modal {
-    padding: 22.526vw 2vw;
+    padding: 22.526vw 3vw;
   }
   .feedback__container,
 .graph-modal__container {
@@ -3049,7 +3057,7 @@ a {
 @media only screen and (max-width: 600px) {
   .feedback,
 .graph-modal {
-    padding: 29.867vw 2vw;
+    padding: 29.867vw 3vw;
   }
   .feedback__container,
 .graph-modal__container {
