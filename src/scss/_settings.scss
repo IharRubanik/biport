@@ -117,15 +117,13 @@ a {
   .container {
     max-width: 166.667vw;
     margin: 0 auto;
-    padding: 0 1.953vw;
+    padding: 0 3vw;
   }
 }
 
 @include mobile {
   .container {
-    max-width: 344.924vw;
-    margin: 0 auto;
-    padding: 0 4.04vw;
+    padding: 0 3vw;
   }
 }
 

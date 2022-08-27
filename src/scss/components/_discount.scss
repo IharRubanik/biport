@@ -70,7 +70,7 @@
 
 @include tablet {
   .discount {
-    padding: 10.938vw 3.906vw;
+    padding: 10.938vw 3vw;
 
     &__bg {
       width: 100vw;
@@ -128,7 +128,7 @@
 
 @include mobile {
   .discount {
-    padding: 12.333vw 4vw;
+    padding: 12.333vw 3vw;
 
     &__bg {
       width: 100%;

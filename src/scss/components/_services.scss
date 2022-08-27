@@ -118,7 +118,7 @@
   .services {
     &__info {
       width: 100%;
-      padding: 33.724vw 3.906vw;
+      padding: 33.724vw 3vw;
     }
 
     .title {
@@ -210,7 +210,7 @@
 
     &__info {
       width: 100%;
-      padding: 8vw 4vw 15.2vw;
+      padding: 8vw 2.5vw 15.2vw;
     }
 
     .title {
@@ -237,7 +237,7 @@
 
     &__right {
       width: 100%;
-      padding: 17.333vw 4vw 7vw;
+      padding: 17.333vw 2vw 7vw;
     }
 
     &__wrapper {
@@ -253,6 +253,7 @@
     .swiper-button-prev {
       width: 15.5vw;
       height: 15.5vw;
+      border: 0.35vw solid var(--main-black);
     }
 
     .swiper-button-next::after,

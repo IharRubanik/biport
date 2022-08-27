@@ -70,7 +70,7 @@
     position: static;
     width: 4.167vw;
     height: 4.167vw;
-    border: 0.052vw solid var(--main-black);
+    border: 0.1vw solid var(--main-black);
     border-radius: 50%;
     color: var(--main-black);
     transform: translateY(0.365vw);
@@ -289,6 +289,7 @@
     .swiper-button-prev {
       width: 15.5vw;
       height: 15.5vw;
+      border: 0.35vw solid var(--main-black);
     }
 
     .swiper-button-next::after,
@@ -311,6 +312,9 @@
 
     &__item {
       padding-bottom: 2.667vw;
+      &::after {
+        height: 0.4vw;
+      }
     }
 
     &__num {

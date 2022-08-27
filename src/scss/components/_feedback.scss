@@ -124,7 +124,7 @@
 @include tablet {
   .feedback,
   .graph-modal {
-    padding: 22.526vw 3.906vw;
+    padding: 22.526vw 3vw;
 
     &__container {
       max-width: 100%;
@@ -185,7 +185,7 @@
 @include mobile {
   .feedback,
   .graph-modal {
-    padding: 29.867vw 3.106vw;
+    padding: 29.867vw 3vw;
 
     &__container {
       max-width: 100%;

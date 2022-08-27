@@ -60,11 +60,12 @@
   }
 
   .action__title {
-    font-size: 1.589vw;
-    padding: 0vw 2.706vw;
+    font-size: 1.580vw;
+    line-height: 1.1;
+    padding: 0vw 3vw;
     &::after,
     &::before {
-      top: 0;
+      top: 0.5vw;
       width: 1.04vw;
       height: 1.04vw;
     }
