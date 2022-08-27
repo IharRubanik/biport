@@ -190,6 +190,7 @@
     //hover-btns
     &__btn-next {
       right: 7vw;
+      z-index: 1;
       &::after {
         font-size: 8.883vw;
       }
@@ -212,6 +213,7 @@
 
     &__btn-prev {
       left: 7vw;
+      z-index: 1;
       &::after {
         font-size: 8.883vw;
       }
