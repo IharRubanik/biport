@@ -3046,7 +3046,7 @@ a {
 .graph-modal .form__input {
     margin-bottom: 1.281vw;
     padding: 0vw 3.953vw 1.953vw;
-    font-size: 2.083vw;
+    font-size: 2.088vw;
     line-height: 3.32vw;
   }
   .feedback .form__notice,
@@ -3060,7 +3060,7 @@ a {
 @media only screen and (max-width: 600px) {
   .feedback,
 .graph-modal {
-    padding: 29.867vw 3vw;
+    padding: 29.867vw 2vw;
   }
   .feedback__container,
 .graph-modal__container {
@@ -3109,7 +3109,7 @@ a {
   }
   .feedback .form__input,
 .graph-modal .form__input {
-    font-size: 3.733vw;
+    font-size: 4.267vw;
     padding-left: 10.037vw;
     padding-bottom: 4.067vw;
     margin-bottom: 8.266vw;
