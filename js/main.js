@@ -417,7 +417,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const scroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_0___default())('a[href*="#"]', {
   speed: 200,
-  speedAsDuration: true
+  speedAsDuration: true,
+  header: "[data-scroll-header]"
 });
 
 /***/ }),
