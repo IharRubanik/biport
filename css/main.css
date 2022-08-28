@@ -355,13 +355,14 @@ a {
     background-color: var(--main-green-dark);
     width: 7.937vw;
     height: 3.516vw;
+    border-radius: 3vw;
   }
   .choices__inner {
     font-size: 2.114vw;
   }
   .choices__item--selectable {
     color: var(--light);
-    padding: 1vw 0.733vw;
+    padding: 1.1vw;
     cursor: none;
   }
   .is-open .choices__inner {
@@ -393,9 +394,6 @@ a {
     border-width: 0.7vw;
     top: 1.5vw;
   }
-  .choices[data-type*=select-one] {
-    cursor: none;
-  }
 }
 @media only screen and (max-width: 600px) {
   .choices {
@@ -409,7 +407,6 @@ a {
   }
   .choices__item--selectable {
     padding: 1.166vw 2.346vw;
-    cursor: none;
   }
   .is-open .choices__item {
     color: var(--light);
@@ -545,7 +542,7 @@ a {
 
 @media only screen and (max-width: 1200px) {
   .graph-modal {
-    padding: 12.526vw 3.906vw !important;
+    padding: 12.526vw 3vw !important;
     top: 0;
   }
   .graph-modal::before {
