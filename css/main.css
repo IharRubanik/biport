@@ -2316,8 +2316,10 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.product:hover {
-  background: rgba(129, 107, 107, 0.3);
+@media (min-width: 1025px) {
+  .product:hover {
+    background: rgba(129, 107, 107, 0.3);
+  }
 }
 .product__term {
   font-size: 0.938vw;
