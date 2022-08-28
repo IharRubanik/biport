@@ -3059,7 +3059,7 @@ a {
 @media only screen and (max-width: 600px) {
   .feedback,
 .graph-modal {
-    padding: 29.867vw 2vw;
+    padding: 29.867vw 3vw;
   }
   .feedback__container,
 .graph-modal__container {
